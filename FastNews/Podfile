@@ -2,6 +2,7 @@ source 'https://github.com/cocoapods/Specs.git'
 
 platform:ios, '7.0'
 
+pod 'MagicalRecord', '~> 2.3'
 pod 'ViperMcFlurry'
 
 target 'FastNewsTests', :exclusive => true do

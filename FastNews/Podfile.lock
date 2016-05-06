@@ -1,4 +1,7 @@
 PODS:
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - OCMock (3.3)
   - ViperMcFlurry (1.2.0):
     - ViperMcFlurry/Core (= 1.2.0)
@@ -8,10 +11,12 @@ PODS:
     - ViperMcFlurry/Core
 
 DEPENDENCIES:
+  - MagicalRecord (~> 2.3)
   - OCMock (~> 3.1)
   - ViperMcFlurry
 
 SPEC CHECKSUMS:
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
   ViperMcFlurry: dc0aed190c3485fc6c95a50375d2e9812c9adb7e
 
