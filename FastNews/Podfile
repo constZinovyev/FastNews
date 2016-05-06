@@ -4,6 +4,7 @@ platform:ios, '7.0'
 
 pod 'MagicalRecord', '~> 2.3'
 pod 'ViperMcFlurry'
+pod 'Typhoon', '~> 3.3'
 
 target 'FastNewsTests', :exclusive => true do
     pod 'OCMock', '~> 3.1'
