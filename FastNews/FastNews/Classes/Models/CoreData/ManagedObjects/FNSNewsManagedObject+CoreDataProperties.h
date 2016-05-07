@@ -1,5 +1,5 @@
 //
-//  RSSNewsManagedObject+CoreDataProperties.h
+//  FNSNewsManagedObject+CoreDataProperties.h
 //  FastNews
 //
 //  Created by Сonstantin Zinovyev on 07.05.16.
@@ -9,18 +9,18 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "RSSNewsManagedObject.h"
+#import "FNSNewsManagedObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RSSNewsManagedObject (CoreDataProperties)
+@interface FNSNewsManagedObject (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSString *author;
-@property (nullable, nonatomic, retain) NSString *content;
-@property (nullable, nonatomic, retain) NSDate *date;
-@property (nullable, nonatomic, retain) NSString *imageURL;
-@property (nullable, nonatomic, retain) NSString *link;
 @property (nullable, nonatomic, retain) NSString *title;
+@property (nullable, nonatomic, retain) NSString *link;
+@property (nullable, nonatomic, retain) NSString *imageURL;
+@property (nullable, nonatomic, retain) NSString *content;
+@property (nullable, nonatomic, retain) NSString *author;
+@property (nullable, nonatomic, retain) NSDate *date;
 
 @end
 

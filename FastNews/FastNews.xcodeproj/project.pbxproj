@@ -1,805 +1,1757 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		97273CD01CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CCB1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m */; };
-		97273CD11CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CCF1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m */; };
-		97273CD71CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CD41CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m */; };
-		97273CD81CDE088B00B0A5E4 /* FNSRSSRecieverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CD61CDE088B00B0A5E4 /* FNSRSSRecieverTests.m */; };
-		97273CDD1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CDA1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m */; };
-		97273CDE1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CDC1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */; };
-		97273CE01CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97273CDF1CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld */; };
-		97273CE31CDE08DA00B0A5E4 /* FNSNewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CE21CDE08DA00B0A5E4 /* FNSNewsObject.m */; };
-		9743C9F31CDC96CF00FA8D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743C9F21CDC96CF00FA8D9A /* main.m */; };
-		9743C9F61CDC96CF00FA8D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743C9F51CDC96CF00FA8D9A /* AppDelegate.m */; };
-		9743C9F91CDC96CF00FA8D9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743C9F81CDC96CF00FA8D9A /* ViewController.m */; };
-		9743C9FC1CDC96CF00FA8D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9743C9FA1CDC96CF00FA8D9A /* Main.storyboard */; };
-		9743C9FE1CDC96CF00FA8D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9743C9FD1CDC96CF00FA8D9A /* Assets.xcassets */; };
-		9743CA011CDC96CF00FA8D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9743C9FF1CDC96CF00FA8D9A /* LaunchScreen.storyboard */; };
-		9743CA0C1CDC96D000FA8D9A /* FastNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743CA0B1CDC96D000FA8D9A /* FastNewsTests.m */; };
-		9743CA171CDC96D000FA8D9A /* FastNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743CA161CDC96D000FA8D9A /* FastNewsUITests.m */; };
-		9B8FC3AEFF98CA189FDAF274 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500E0A3AC9D70A15E797E76F /* libPods.a */; };
-		E0ECE39505369FC4A971DE18 /* libPods-FastNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 806EF3C1FFBD7BD2EA1C5E95 /* libPods-FastNewsTests.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9743CA081CDC96D000FA8D9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9743C9E61CDC96CF00FA8D9A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9743C9ED1CDC96CF00FA8D9A;
-			remoteInfo = FastNews;
-		};
-		9743CA131CDC96D000FA8D9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9743C9E61CDC96CF00FA8D9A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9743C9ED1CDC96CF00FA8D9A;
-			remoteInfo = FastNews;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		500E0A3AC9D70A15E797E76F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7081DDE8ECB40901812B471A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		806EF3C1FFBD7BD2EA1C5E95 /* libPods-FastNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97273CC91CDE087900B0A5E4 /* FNSMultipleRSSReciever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSMultipleRSSReciever.h; sourceTree = "<group>"; };
-		97273CCA1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSMultipleRSSRecieverImplementation.h; sourceTree = "<group>"; };
-		97273CCB1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSMultipleRSSRecieverImplementation.m; sourceTree = "<group>"; };
-		97273CCD1CDE087900B0A5E4 /* FNSRSSReciever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSRSSReciever.h; sourceTree = "<group>"; };
-		97273CCE1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSRSSRecieverImplementation.h; sourceTree = "<group>"; };
-		97273CCF1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSRSSRecieverImplementation.m; sourceTree = "<group>"; };
-		97273CD41CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSMultipleRSSRecieverTests.m; sourceTree = "<group>"; };
-		97273CD61CDE088B00B0A5E4 /* FNSRSSRecieverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSRSSRecieverTests.m; sourceTree = "<group>"; };
-		97273CD91CDE08AD00B0A5E4 /* RSSNewsManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSNewsManagedObject.h; path = FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject.h; sourceTree = SOURCE_ROOT; };
-		97273CDA1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSNewsManagedObject.m; path = FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject.m; sourceTree = SOURCE_ROOT; };
-		97273CDB1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RSSNewsManagedObject+CoreDataProperties.h"; path = "FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
-		97273CDC1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RSSNewsManagedObject+CoreDataProperties.m"; path = "FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
-		97273CE11CDE08DA00B0A5E4 /* FNSNewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNSNewsObject.h; path = FastNews/Classes/Models/Objects/FNSNewsObject.h; sourceTree = SOURCE_ROOT; };
-		97273CE21CDE08DA00B0A5E4 /* FNSNewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNSNewsObject.m; path = FastNews/Classes/Models/Objects/FNSNewsObject.m; sourceTree = SOURCE_ROOT; };
-		9743C9EE1CDC96CF00FA8D9A /* FastNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9743C9F21CDC96CF00FA8D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9743C9F41CDC96CF00FA8D9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9743C9F51CDC96CF00FA8D9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9743C9F71CDC96CF00FA8D9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9743C9F81CDC96CF00FA8D9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9743C9FB1CDC96CF00FA8D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9743C9FD1CDC96CF00FA8D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9743CA001CDC96CF00FA8D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9743CA021CDC96CF00FA8D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9743CA071CDC96D000FA8D9A /* FastNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9743CA0B1CDC96D000FA8D9A /* FastNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastNewsTests.m; sourceTree = "<group>"; };
-		9743CA0D1CDC96D000FA8D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9743CA121CDC96D000FA8D9A /* FastNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9743CA161CDC96D000FA8D9A /* FastNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastNewsUITests.m; sourceTree = "<group>"; };
-		9743CA181CDC96D000FA8D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B918241879C925FFA4EB0B85 /* Pods-FastNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.release.xcconfig"; sourceTree = "<group>"; };
-		CBBA40615985A119C993A790 /* Pods-FastNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F0E36A0F3DF31FEC0600D2C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9743C9EB1CDC96CF00FA8D9A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B8FC3AEFF98CA189FDAF274 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9743CA041CDC96D000FA8D9A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0ECE39505369FC4A971DE18 /* libPods-FastNewsTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9743CA0F1CDC96D000FA8D9A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		38C8B84AD35DEA5CADE39423 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				806EF3C1FFBD7BD2EA1C5E95 /* libPods-FastNewsTests.a */,
-				500E0A3AC9D70A15E797E76F /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5D40E1B9572975E2ECA79C42 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CBBA40615985A119C993A790 /* Pods-FastNewsTests.debug.xcconfig */,
-				B918241879C925FFA4EB0B85 /* Pods-FastNewsTests.release.xcconfig */,
-				7081DDE8ECB40901812B471A /* Pods.debug.xcconfig */,
-				F0E36A0F3DF31FEC0600D2C0 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		97273C9C1CDCEA3600B0A5E4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				97273CA21CDCEC2000B0A5E4 /* CoreData */,
-				97273C9D1CDCEA5400B0A5E4 /* Objects */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		97273C9D1CDCEA5400B0A5E4 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				97273CE11CDE08DA00B0A5E4 /* FNSNewsObject.h */,
-				97273CE21CDE08DA00B0A5E4 /* FNSNewsObject.m */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
-		97273CA21CDCEC2000B0A5E4 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				97273CDF1CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld */,
-				97273CA31CDCEC2800B0A5E4 /* ManagedObjects */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
-		97273CA31CDCEC2800B0A5E4 /* ManagedObjects */ = {
-			isa = PBXGroup;
-			children = (
-				97273CD91CDE08AD00B0A5E4 /* RSSNewsManagedObject.h */,
-				97273CDA1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m */,
-				97273CDB1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.h */,
-				97273CDC1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */,
-			);
-			name = ManagedObjects;
-			sourceTree = "<group>";
-		};
-		97273CB01CDCED4C00B0A5E4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				97273CC71CDE087900B0A5E4 /* CoreLayer */,
-				97273C9C1CDCEA3600B0A5E4 /* Models */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		97273CC71CDE087900B0A5E4 /* CoreLayer */ = {
-			isa = PBXGroup;
-			children = (
-				97273CC81CDE087900B0A5E4 /* FNSMultipleRSSReciever */,
-				97273CCC1CDE087900B0A5E4 /* FNSRSSReciever */,
-			);
-			name = CoreLayer;
-			path = Classes/CoreLayer;
-			sourceTree = "<group>";
-		};
-		97273CC81CDE087900B0A5E4 /* FNSMultipleRSSReciever */ = {
-			isa = PBXGroup;
-			children = (
-				97273CC91CDE087900B0A5E4 /* FNSMultipleRSSReciever.h */,
-				97273CCA1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.h */,
-				97273CCB1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m */,
-			);
-			path = FNSMultipleRSSReciever;
-			sourceTree = "<group>";
-		};
-		97273CCC1CDE087900B0A5E4 /* FNSRSSReciever */ = {
-			isa = PBXGroup;
-			children = (
-				97273CCD1CDE087900B0A5E4 /* FNSRSSReciever.h */,
-				97273CCE1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.h */,
-				97273CCF1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m */,
-			);
-			path = FNSRSSReciever;
-			sourceTree = "<group>";
-		};
-		97273CD21CDE088B00B0A5E4 /* FastNewsCoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				97273CD31CDE088B00B0A5E4 /* MultipleRSSRecieverTests */,
-				97273CD51CDE088B00B0A5E4 /* RSSRecieverTests */,
-			);
-			path = FastNewsCoreTests;
-			sourceTree = "<group>";
-		};
-		97273CD31CDE088B00B0A5E4 /* MultipleRSSRecieverTests */ = {
-			isa = PBXGroup;
-			children = (
-				97273CD41CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m */,
-			);
-			path = MultipleRSSRecieverTests;
-			sourceTree = "<group>";
-		};
-		97273CD51CDE088B00B0A5E4 /* RSSRecieverTests */ = {
-			isa = PBXGroup;
-			children = (
-				97273CD61CDE088B00B0A5E4 /* FNSRSSRecieverTests.m */,
-			);
-			path = RSSRecieverTests;
-			sourceTree = "<group>";
-		};
-		9743C9E51CDC96CF00FA8D9A = {
-			isa = PBXGroup;
-			children = (
-				9743C9F01CDC96CF00FA8D9A /* FastNews */,
-				9743CA0A1CDC96D000FA8D9A /* FastNewsTests */,
-				9743CA151CDC96D000FA8D9A /* FastNewsUITests */,
-				38C8B84AD35DEA5CADE39423 /* Frameworks */,
-				5D40E1B9572975E2ECA79C42 /* Pods */,
-				9743C9EF1CDC96CF00FA8D9A /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		9743C9EF1CDC96CF00FA8D9A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9743C9EE1CDC96CF00FA8D9A /* FastNews.app */,
-				9743CA071CDC96D000FA8D9A /* FastNewsTests.xctest */,
-				9743CA121CDC96D000FA8D9A /* FastNewsUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9743C9F01CDC96CF00FA8D9A /* FastNews */ = {
-			isa = PBXGroup;
-			children = (
-				97273CB01CDCED4C00B0A5E4 /* Classes */,
-				9743C9F11CDC96CF00FA8D9A /* Supporting Files */,
-				9743C9F41CDC96CF00FA8D9A /* AppDelegate.h */,
-				9743C9F51CDC96CF00FA8D9A /* AppDelegate.m */,
-				9743C9FD1CDC96CF00FA8D9A /* Assets.xcassets */,
-				9743CA021CDC96CF00FA8D9A /* Info.plist */,
-				9743C9FF1CDC96CF00FA8D9A /* LaunchScreen.storyboard */,
-				9743C9FA1CDC96CF00FA8D9A /* Main.storyboard */,
-				9743C9F71CDC96CF00FA8D9A /* ViewController.h */,
-				9743C9F81CDC96CF00FA8D9A /* ViewController.m */,
-			);
-			path = FastNews;
-			sourceTree = "<group>";
-		};
-		9743C9F11CDC96CF00FA8D9A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9743C9F21CDC96CF00FA8D9A /* main.m */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9743CA0A1CDC96D000FA8D9A /* FastNewsTests */ = {
-			isa = PBXGroup;
-			children = (
-				97273CD21CDE088B00B0A5E4 /* FastNewsCoreTests */,
-				9743CA0B1CDC96D000FA8D9A /* FastNewsTests.m */,
-				9743CA0D1CDC96D000FA8D9A /* Info.plist */,
-			);
-			path = FastNewsTests;
-			sourceTree = "<group>";
-		};
-		9743CA151CDC96D000FA8D9A /* FastNewsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9743CA161CDC96D000FA8D9A /* FastNewsUITests.m */,
-				9743CA181CDC96D000FA8D9A /* Info.plist */,
-			);
-			path = FastNewsUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		9743C9ED1CDC96CF00FA8D9A /* FastNews */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9743CA1B1CDC96D000FA8D9A /* Build configuration list for PBXNativeTarget "FastNews" */;
-			buildPhases = (
-				0ECA656D64D4B1C4F689CA34 /* Check Pods Manifest.lock */,
-				9743C9EA1CDC96CF00FA8D9A /* Sources */,
-				9743C9EB1CDC96CF00FA8D9A /* Frameworks */,
-				9743C9EC1CDC96CF00FA8D9A /* Resources */,
-				B3EE190B43CEE29DEACA5D71 /* Embed Pods Frameworks */,
-				99160D129E925F3532363F4B /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FastNews;
-			productName = FastNews;
-			productReference = 9743C9EE1CDC96CF00FA8D9A /* FastNews.app */;
-			productType = "com.apple.product-type.application";
-		};
-		9743CA061CDC96D000FA8D9A /* FastNewsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9743CA1E1CDC96D000FA8D9A /* Build configuration list for PBXNativeTarget "FastNewsTests" */;
-			buildPhases = (
-				398194A54EA8BEB2B025B31C /* Check Pods Manifest.lock */,
-				9743CA031CDC96D000FA8D9A /* Sources */,
-				9743CA041CDC96D000FA8D9A /* Frameworks */,
-				9743CA051CDC96D000FA8D9A /* Resources */,
-				5074BD08BFC757C906C1E646 /* Embed Pods Frameworks */,
-				622E012100152947F31A21A3 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9743CA091CDC96D000FA8D9A /* PBXTargetDependency */,
-			);
-			name = FastNewsTests;
-			productName = FastNewsTests;
-			productReference = 9743CA071CDC96D000FA8D9A /* FastNewsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9743CA111CDC96D000FA8D9A /* FastNewsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9743CA211CDC96D000FA8D9A /* Build configuration list for PBXNativeTarget "FastNewsUITests" */;
-			buildPhases = (
-				9743CA0E1CDC96D000FA8D9A /* Sources */,
-				9743CA0F1CDC96D000FA8D9A /* Frameworks */,
-				9743CA101CDC96D000FA8D9A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9743CA141CDC96D000FA8D9A /* PBXTargetDependency */,
-			);
-			name = FastNewsUITests;
-			productName = FastNewsUITests;
-			productReference = 9743CA121CDC96D000FA8D9A /* FastNewsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		9743C9E61CDC96CF00FA8D9A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = ConstZin;
-				TargetAttributes = {
-					9743C9ED1CDC96CF00FA8D9A = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					9743CA061CDC96D000FA8D9A = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 9743C9ED1CDC96CF00FA8D9A;
-					};
-					9743CA111CDC96D000FA8D9A = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 9743C9ED1CDC96CF00FA8D9A;
-					};
-				};
-			};
-			buildConfigurationList = 9743C9E91CDC96CF00FA8D9A /* Build configuration list for PBXProject "FastNews" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 9743C9E51CDC96CF00FA8D9A;
-			productRefGroup = 9743C9EF1CDC96CF00FA8D9A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				9743C9ED1CDC96CF00FA8D9A /* FastNews */,
-				9743CA061CDC96D000FA8D9A /* FastNewsTests */,
-				9743CA111CDC96D000FA8D9A /* FastNewsUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		9743C9EC1CDC96CF00FA8D9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9743CA011CDC96CF00FA8D9A /* LaunchScreen.storyboard in Resources */,
-				9743C9FE1CDC96CF00FA8D9A /* Assets.xcassets in Resources */,
-				9743C9FC1CDC96CF00FA8D9A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9743CA051CDC96D000FA8D9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9743CA101CDC96D000FA8D9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0ECA656D64D4B1C4F689CA34 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		398194A54EA8BEB2B025B31C /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5074BD08BFC757C906C1E646 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		622E012100152947F31A21A3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		99160D129E925F3532363F4B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3EE190B43CEE29DEACA5D71 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		9743C9EA1CDC96CF00FA8D9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				97273CE31CDE08DA00B0A5E4 /* FNSNewsObject.m in Sources */,
-				97273CDE1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */,
-				97273CD11CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m in Sources */,
-				9743C9F91CDC96CF00FA8D9A /* ViewController.m in Sources */,
-				97273CDD1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m in Sources */,
-				9743C9F61CDC96CF00FA8D9A /* AppDelegate.m in Sources */,
-				9743C9F31CDC96CF00FA8D9A /* main.m in Sources */,
-				97273CD01CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m in Sources */,
-				97273CE01CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9743CA031CDC96D000FA8D9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9743CA0C1CDC96D000FA8D9A /* FastNewsTests.m in Sources */,
-				97273CD71CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m in Sources */,
-				97273CD81CDE088B00B0A5E4 /* FNSRSSRecieverTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9743CA0E1CDC96D000FA8D9A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9743CA171CDC96D000FA8D9A /* FastNewsUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9743CA091CDC96D000FA8D9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9743C9ED1CDC96CF00FA8D9A /* FastNews */;
-			targetProxy = 9743CA081CDC96D000FA8D9A /* PBXContainerItemProxy */;
-		};
-		9743CA141CDC96D000FA8D9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9743C9ED1CDC96CF00FA8D9A /* FastNews */;
-			targetProxy = 9743CA131CDC96D000FA8D9A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9743C9FA1CDC96CF00FA8D9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9743C9FB1CDC96CF00FA8D9A /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-		9743C9FF1CDC96CF00FA8D9A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9743CA001CDC96CF00FA8D9A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		9743CA191CDC96D000FA8D9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		9743CA1A1CDC96D000FA8D9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9743CA1C1CDC96D000FA8D9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7081DDE8ECB40901812B471A /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FastNews/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConstZin.FastNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		9743CA1D1CDC96D000FA8D9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0E36A0F3DF31FEC0600D2C0 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = FastNews/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConstZin.FastNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		9743CA1F1CDC96D000FA8D9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBBA40615985A119C993A790 /* Pods-FastNewsTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FastNewsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConstZin.FastNewsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastNews.app/FastNews";
-			};
-			name = Debug;
-		};
-		9743CA201CDC96D000FA8D9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B918241879C925FFA4EB0B85 /* Pods-FastNewsTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FastNewsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConstZin.FastNewsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastNews.app/FastNews";
-			};
-			name = Release;
-		};
-		9743CA221CDC96D000FA8D9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FastNewsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConstZin.FastNewsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FastNews;
-			};
-			name = Debug;
-		};
-		9743CA231CDC96D000FA8D9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FastNewsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ConstZin.FastNewsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = FastNews;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		9743C9E91CDC96CF00FA8D9A /* Build configuration list for PBXProject "FastNews" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9743CA191CDC96D000FA8D9A /* Debug */,
-				9743CA1A1CDC96D000FA8D9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9743CA1B1CDC96D000FA8D9A /* Build configuration list for PBXNativeTarget "FastNews" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9743CA1C1CDC96D000FA8D9A /* Debug */,
-				9743CA1D1CDC96D000FA8D9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9743CA1E1CDC96D000FA8D9A /* Build configuration list for PBXNativeTarget "FastNewsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9743CA1F1CDC96D000FA8D9A /* Debug */,
-				9743CA201CDC96D000FA8D9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9743CA211CDC96D000FA8D9A /* Build configuration list for PBXNativeTarget "FastNewsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9743CA221CDC96D000FA8D9A /* Debug */,
-				9743CA231CDC96D000FA8D9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		97273CDF1CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			name = FastNewsModel.xcdatamodeld;
-			path = ../Classes/Models/CoreData/FastNewsModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = 9743C9E61CDC96CF00FA8D9A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0ECA656D64D4B1C4F689CA34</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>38C8B84AD35DEA5CADE39423</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>806EF3C1FFBD7BD2EA1C5E95</string>
+				<string>500E0A3AC9D70A15E797E76F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>398194A54EA8BEB2B025B31C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>500E0A3AC9D70A15E797E76F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5074BD08BFC757C906C1E646</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5D40E1B9572975E2ECA79C42</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CBBA40615985A119C993A790</string>
+				<string>B918241879C925FFA4EB0B85</string>
+				<string>7081DDE8ECB40901812B471A</string>
+				<string>F0E36A0F3DF31FEC0600D2C0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>622E012100152947F31A21A3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>7081DDE8ECB40901812B471A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>806EF3C1FFBD7BD2EA1C5E95</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-FastNewsTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>97273C9C1CDCEA3600B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CA21CDCEC2000B0A5E4</string>
+				<string>97273C9D1CDCEA5400B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273C9D1CDCEA5400B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CE11CDE08DA00B0A5E4</string>
+				<string>97273CE21CDE08DA00B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Objects</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CA21CDCEC2000B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CA31CDCEC2800B0A5E4</string>
+				<string>97D00F701CDE20E900B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CoreData</string>
+			<key>path</key>
+			<string>CoreData</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CA31CDCEC2800B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F721CDE213600B5372A</string>
+				<string>97D00F731CDE213600B5372A</string>
+				<string>97D00F741CDE213600B5372A</string>
+				<string>97D00F751CDE213600B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ManagedObjects</string>
+			<key>path</key>
+			<string>ManagedObjects</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CB01CDCED4C00B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CC71CDE087900B0A5E4</string>
+				<string>97273C9C1CDCEA3600B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CC71CDE087900B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CC81CDE087900B0A5E4</string>
+				<string>97273CCC1CDE087900B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CoreLayer</string>
+			<key>path</key>
+			<string>CoreLayer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CC81CDE087900B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CC91CDE087900B0A5E4</string>
+				<string>97273CCA1CDE087900B0A5E4</string>
+				<string>97273CCB1CDE087900B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FNSMultipleRSSReciever</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CC91CDE087900B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSMultipleRSSReciever.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CCA1CDE087900B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSMultipleRSSRecieverImplementation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CCB1CDE087900B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSMultipleRSSRecieverImplementation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CCC1CDE087900B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CCD1CDE087900B0A5E4</string>
+				<string>97273CCE1CDE087900B0A5E4</string>
+				<string>97273CCF1CDE087900B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FNSRSSReciever</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CCD1CDE087900B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSRSSReciever.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CCE1CDE087900B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSRSSRecieverImplementation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CCF1CDE087900B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSRSSRecieverImplementation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CD01CDE087900B0A5E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97273CCB1CDE087900B0A5E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97273CD11CDE087900B0A5E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97273CCF1CDE087900B0A5E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97273CD21CDE088B00B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CD31CDE088B00B0A5E4</string>
+				<string>97273CD51CDE088B00B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FastNewsCoreTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CD31CDE088B00B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CD41CDE088B00B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MultipleRSSRecieverTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CD41CDE088B00B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSMultipleRSSRecieverTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CD51CDE088B00B0A5E4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CD61CDE088B00B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>RSSRecieverTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CD61CDE088B00B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSRSSRecieverTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CD71CDE088B00B0A5E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97273CD41CDE088B00B0A5E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97273CD81CDE088B00B0A5E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97273CD61CDE088B00B0A5E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97273CE11CDE08DA00B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FNSNewsObject.h</string>
+			<key>path</key>
+			<string>FNSNewsObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CE21CDE08DA00B0A5E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FNSNewsObject.m</string>
+			<key>path</key>
+			<string>FNSNewsObject.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97273CE31CDE08DA00B0A5E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97273CE21CDE08DA00B0A5E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743C9E51CDC96CF00FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9743C9F01CDC96CF00FA8D9A</string>
+				<string>9743CA0A1CDC96D000FA8D9A</string>
+				<string>9743CA151CDC96D000FA8D9A</string>
+				<string>38C8B84AD35DEA5CADE39423</string>
+				<string>5D40E1B9572975E2ECA79C42</string>
+				<string>9743C9EF1CDC96CF00FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9E61CDC96CF00FA8D9A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>ConstZin</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>9743C9ED1CDC96CF00FA8D9A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+					</dict>
+					<key>9743CA061CDC96D000FA8D9A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>9743C9ED1CDC96CF00FA8D9A</string>
+					</dict>
+					<key>9743CA111CDC96D000FA8D9A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>9743C9ED1CDC96CF00FA8D9A</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>9743C9E91CDC96CF00FA8D9A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>9743C9E51CDC96CF00FA8D9A</string>
+			<key>productRefGroup</key>
+			<string>9743C9EF1CDC96CF00FA8D9A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>9743C9ED1CDC96CF00FA8D9A</string>
+				<string>9743CA061CDC96D000FA8D9A</string>
+				<string>9743CA111CDC96D000FA8D9A</string>
+			</array>
+		</dict>
+		<key>9743C9E91CDC96CF00FA8D9A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9743CA191CDC96D000FA8D9A</string>
+				<string>9743CA1A1CDC96D000FA8D9A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9743C9EA1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>97D00F711CDE20E900B5372A</string>
+				<string>97273CE31CDE08DA00B0A5E4</string>
+				<string>97273CD11CDE087900B0A5E4</string>
+				<string>97D00F771CDE213600B5372A</string>
+				<string>9743C9F91CDC96CF00FA8D9A</string>
+				<string>9743C9F61CDC96CF00FA8D9A</string>
+				<string>9743C9F31CDC96CF00FA8D9A</string>
+				<string>97273CD01CDE087900B0A5E4</string>
+				<string>97D00F761CDE213600B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743C9EB1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9B8FC3AEFF98CA189FDAF274</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743C9EC1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9743CA011CDC96CF00FA8D9A</string>
+				<string>9743C9FE1CDC96CF00FA8D9A</string>
+				<string>9743C9FC1CDC96CF00FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743C9ED1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9743CA1B1CDC96D000FA8D9A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0ECA656D64D4B1C4F689CA34</string>
+				<string>9743C9EA1CDC96CF00FA8D9A</string>
+				<string>9743C9EB1CDC96CF00FA8D9A</string>
+				<string>9743C9EC1CDC96CF00FA8D9A</string>
+				<string>B3EE190B43CEE29DEACA5D71</string>
+				<string>99160D129E925F3532363F4B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FastNews</string>
+			<key>productName</key>
+			<string>FastNews</string>
+			<key>productReference</key>
+			<string>9743C9EE1CDC96CF00FA8D9A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>9743C9EE1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FastNews.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9743C9EF1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9743C9EE1CDC96CF00FA8D9A</string>
+				<string>9743CA071CDC96D000FA8D9A</string>
+				<string>9743CA121CDC96D000FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F01CDC96CF00FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CB01CDCED4C00B0A5E4</string>
+				<string>9743C9F11CDC96CF00FA8D9A</string>
+				<string>9743C9F41CDC96CF00FA8D9A</string>
+				<string>9743C9F51CDC96CF00FA8D9A</string>
+				<string>9743C9FD1CDC96CF00FA8D9A</string>
+				<string>9743CA021CDC96CF00FA8D9A</string>
+				<string>9743C9FF1CDC96CF00FA8D9A</string>
+				<string>9743C9FA1CDC96CF00FA8D9A</string>
+				<string>9743C9F71CDC96CF00FA8D9A</string>
+				<string>9743C9F81CDC96CF00FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FastNews</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F11CDC96CF00FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9743C9F21CDC96CF00FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F21CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F31CDC96CF00FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743C9F21CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743C9F41CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F51CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F61CDC96CF00FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743C9F51CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743C9F71CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F81CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9F91CDC96CF00FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743C9F81CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743C9FA1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9743C9FB1CDC96CF00FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>path</key>
+			<string>.</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9FB1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9FC1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743C9FA1CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743C9FD1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743C9FE1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743C9FD1CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743C9FF1CDC96CF00FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9743CA001CDC96CF00FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>path</key>
+			<string>.</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA001CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA011CDC96CF00FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743C9FF1CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743CA021CDC96CF00FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA031CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9743CA0C1CDC96D000FA8D9A</string>
+				<string>97273CD71CDE088B00B0A5E4</string>
+				<string>97273CD81CDE088B00B0A5E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743CA041CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E0ECE39505369FC4A971DE18</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743CA051CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743CA061CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9743CA1E1CDC96D000FA8D9A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>398194A54EA8BEB2B025B31C</string>
+				<string>9743CA031CDC96D000FA8D9A</string>
+				<string>9743CA041CDC96D000FA8D9A</string>
+				<string>9743CA051CDC96D000FA8D9A</string>
+				<string>5074BD08BFC757C906C1E646</string>
+				<string>622E012100152947F31A21A3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9743CA091CDC96D000FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FastNewsTests</string>
+			<key>productName</key>
+			<string>FastNewsTests</string>
+			<key>productReference</key>
+			<string>9743CA071CDC96D000FA8D9A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>9743CA071CDC96D000FA8D9A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FastNewsTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9743CA081CDC96D000FA8D9A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>9743C9E61CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9743C9ED1CDC96CF00FA8D9A</string>
+			<key>remoteInfo</key>
+			<string>FastNews</string>
+		</dict>
+		<key>9743CA091CDC96D000FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>9743C9ED1CDC96CF00FA8D9A</string>
+			<key>targetProxy</key>
+			<string>9743CA081CDC96D000FA8D9A</string>
+		</dict>
+		<key>9743CA0A1CDC96D000FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97273CD21CDE088B00B0A5E4</string>
+				<string>9743CA0B1CDC96D000FA8D9A</string>
+				<string>9743CA0D1CDC96D000FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FastNewsTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA0B1CDC96D000FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FastNewsTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA0C1CDC96D000FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743CA0B1CDC96D000FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743CA0D1CDC96D000FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA0E1CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9743CA171CDC96D000FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743CA0F1CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743CA101CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9743CA111CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9743CA211CDC96D000FA8D9A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9743CA0E1CDC96D000FA8D9A</string>
+				<string>9743CA0F1CDC96D000FA8D9A</string>
+				<string>9743CA101CDC96D000FA8D9A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9743CA141CDC96D000FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>FastNewsUITests</string>
+			<key>productName</key>
+			<string>FastNewsUITests</string>
+			<key>productReference</key>
+			<string>9743CA121CDC96D000FA8D9A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>9743CA121CDC96D000FA8D9A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>FastNewsUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9743CA131CDC96D000FA8D9A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>9743C9E61CDC96CF00FA8D9A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9743C9ED1CDC96CF00FA8D9A</string>
+			<key>remoteInfo</key>
+			<string>FastNews</string>
+		</dict>
+		<key>9743CA141CDC96D000FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>9743C9ED1CDC96CF00FA8D9A</string>
+			<key>targetProxy</key>
+			<string>9743CA131CDC96D000FA8D9A</string>
+		</dict>
+		<key>9743CA151CDC96D000FA8D9A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9743CA161CDC96D000FA8D9A</string>
+				<string>9743CA181CDC96D000FA8D9A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FastNewsUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA161CDC96D000FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FastNewsUITests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA171CDC96D000FA8D9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9743CA161CDC96D000FA8D9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9743CA181CDC96D000FA8D9A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9743CA191CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9743CA1A1CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9743CA1B1CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9743CA1C1CDC96D000FA8D9A</string>
+				<string>9743CA1D1CDC96D000FA8D9A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9743CA1C1CDC96D000FA8D9A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7081DDE8ECB40901812B471A</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FastNews/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ConstZin.FastNews</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9743CA1D1CDC96D000FA8D9A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F0E36A0F3DF31FEC0600D2C0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FastNews/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ConstZin.FastNews</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9743CA1E1CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9743CA1F1CDC96D000FA8D9A</string>
+				<string>9743CA201CDC96D000FA8D9A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9743CA1F1CDC96D000FA8D9A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>CBBA40615985A119C993A790</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FastNewsTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ConstZin.FastNewsTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FastNews.app/FastNews</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9743CA201CDC96D000FA8D9A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B918241879C925FFA4EB0B85</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>FastNewsTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ConstZin.FastNewsTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/FastNews.app/FastNews</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9743CA211CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9743CA221CDC96D000FA8D9A</string>
+				<string>9743CA231CDC96D000FA8D9A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9743CA221CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>FastNewsUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ConstZin.FastNewsUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>FastNews</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9743CA231CDC96D000FA8D9A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>FastNewsUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ConstZin.FastNewsUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>FastNews</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>97D00F701CDE20E900B5372A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>name</key>
+			<string>FastNewsModel.xcdatamodel</string>
+			<key>path</key>
+			<string>FastNewsModel.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F711CDE20E900B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F701CDE20E900B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00F721CDE213600B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FNSNewsManagedObject+CoreDataProperties.h</string>
+			<key>path</key>
+			<string>FNSNewsManagedObject+CoreDataProperties.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F731CDE213600B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FNSNewsManagedObject+CoreDataProperties.m</string>
+			<key>path</key>
+			<string>FNSNewsManagedObject+CoreDataProperties.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F741CDE213600B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FNSNewsManagedObject.h</string>
+			<key>path</key>
+			<string>FNSNewsManagedObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F751CDE213600B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FNSNewsManagedObject.m</string>
+			<key>path</key>
+			<string>FNSNewsManagedObject.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F761CDE213600B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F731CDE213600B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00F771CDE213600B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F751CDE213600B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>99160D129E925F3532363F4B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9B8FC3AEFF98CA189FDAF274</key>
+		<dict>
+			<key>fileRef</key>
+			<string>500E0A3AC9D70A15E797E76F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3EE190B43CEE29DEACA5D71</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B918241879C925FFA4EB0B85</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FastNewsTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CBBA40615985A119C993A790</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-FastNewsTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0ECE39505369FC4A971DE18</key>
+		<dict>
+			<key>fileRef</key>
+			<string>806EF3C1FFBD7BD2EA1C5E95</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F0E36A0F3DF31FEC0600D2C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>9743C9E61CDC96CF00FA8D9A</string>
+</dict>
+</plist>

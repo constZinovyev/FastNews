@@ -1,5 +1,5 @@
 //
-//  RSSNewsManagedObject+CoreDataProperties.m
+//  FNSNewsManagedObject+CoreDataProperties.m
 //  FastNews
 //
 //  Created by Сonstantin Zinovyev on 07.05.16.
@@ -9,15 +9,15 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "RSSNewsManagedObject+CoreDataProperties.h"
+#import "FNSNewsManagedObject+CoreDataProperties.h"
 
-@implementation RSSNewsManagedObject (CoreDataProperties)
+@implementation FNSNewsManagedObject (CoreDataProperties)
 
-@dynamic author;
-@dynamic content;
-@dynamic date;
-@dynamic imageURL;
-@dynamic link;
 @dynamic title;
+@dynamic link;
+@dynamic imageURL;
+@dynamic content;
+@dynamic author;
+@dynamic date;
 
 @end
