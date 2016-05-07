@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97273CA01CDCEA8000B0A5E4 /* FNSNewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273C9F1CDCEA8000B0A5E4 /* FNSNewsObject.m */; };
-		97273CA11CDCEA8000B0A5E4 /* FNSNewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273C9F1CDCEA8000B0A5E4 /* FNSNewsObject.m */; };
-		97273CA61CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97273CA41CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodeld */; };
-		97273CAB1CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CA81CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */; };
-		97273CAC1CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CA81CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */; };
-		97273CAD1CDCECB000B0A5E4 /* RSSNewsManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CAA1CDCECB000B0A5E4 /* RSSNewsManagedObject.m */; };
-		97273CAE1CDCECB000B0A5E4 /* RSSNewsManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CAA1CDCECB000B0A5E4 /* RSSNewsManagedObject.m */; };
+		97273CD01CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CCB1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m */; };
+		97273CD11CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CCF1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m */; };
+		97273CD71CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CD41CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m */; };
+		97273CD81CDE088B00B0A5E4 /* FNSRSSRecieverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CD61CDE088B00B0A5E4 /* FNSRSSRecieverTests.m */; };
+		97273CDD1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CDA1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m */; };
+		97273CDE1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CDC1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */; };
+		97273CE01CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97273CDF1CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld */; };
+		97273CE31CDE08DA00B0A5E4 /* FNSNewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97273CE21CDE08DA00B0A5E4 /* FNSNewsObject.m */; };
 		9743C9F31CDC96CF00FA8D9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743C9F21CDC96CF00FA8D9A /* main.m */; };
 		9743C9F61CDC96CF00FA8D9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743C9F51CDC96CF00FA8D9A /* AppDelegate.m */; };
 		9743C9F91CDC96CF00FA8D9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743C9F81CDC96CF00FA8D9A /* ViewController.m */; };
@@ -47,13 +48,20 @@
 		500E0A3AC9D70A15E797E76F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7081DDE8ECB40901812B471A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		806EF3C1FFBD7BD2EA1C5E95 /* libPods-FastNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97273C9E1CDCEA8000B0A5E4 /* FNSNewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSNewsObject.h; sourceTree = "<group>"; };
-		97273C9F1CDCEA8000B0A5E4 /* FNSNewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSNewsObject.m; sourceTree = "<group>"; };
-		97273CA51CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastNewsModel.xcdatamodel; sourceTree = "<group>"; };
-		97273CA71CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSSNewsManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
-		97273CA81CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RSSNewsManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
-		97273CA91CDCECB000B0A5E4 /* RSSNewsManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSNewsManagedObject.h; sourceTree = "<group>"; };
-		97273CAA1CDCECB000B0A5E4 /* RSSNewsManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSNewsManagedObject.m; sourceTree = "<group>"; };
+		97273CC91CDE087900B0A5E4 /* FNSMultipleRSSReciever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSMultipleRSSReciever.h; sourceTree = "<group>"; };
+		97273CCA1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSMultipleRSSRecieverImplementation.h; sourceTree = "<group>"; };
+		97273CCB1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSMultipleRSSRecieverImplementation.m; sourceTree = "<group>"; };
+		97273CCD1CDE087900B0A5E4 /* FNSRSSReciever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSRSSReciever.h; sourceTree = "<group>"; };
+		97273CCE1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSRSSRecieverImplementation.h; sourceTree = "<group>"; };
+		97273CCF1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSRSSRecieverImplementation.m; sourceTree = "<group>"; };
+		97273CD41CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSMultipleRSSRecieverTests.m; sourceTree = "<group>"; };
+		97273CD61CDE088B00B0A5E4 /* FNSRSSRecieverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSRSSRecieverTests.m; sourceTree = "<group>"; };
+		97273CD91CDE08AD00B0A5E4 /* RSSNewsManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSNewsManagedObject.h; path = FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject.h; sourceTree = SOURCE_ROOT; };
+		97273CDA1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSSNewsManagedObject.m; path = FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject.m; sourceTree = SOURCE_ROOT; };
+		97273CDB1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RSSNewsManagedObject+CoreDataProperties.h"; path = "FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		97273CDC1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RSSNewsManagedObject+CoreDataProperties.m"; path = "FastNews/Classes/Models/CoreData/ManagedObjects/RSSNewsManagedObject+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
+		97273CE11CDE08DA00B0A5E4 /* FNSNewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNSNewsObject.h; path = FastNews/Classes/Models/Objects/FNSNewsObject.h; sourceTree = SOURCE_ROOT; };
+		97273CE21CDE08DA00B0A5E4 /* FNSNewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNSNewsObject.m; path = FastNews/Classes/Models/Objects/FNSNewsObject.m; sourceTree = SOURCE_ROOT; };
 		9743C9EE1CDC96CF00FA8D9A /* FastNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9743C9F21CDC96CF00FA8D9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9743C9F41CDC96CF00FA8D9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,8 +142,8 @@
 		97273C9D1CDCEA5400B0A5E4 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				97273C9E1CDCEA8000B0A5E4 /* FNSNewsObject.h */,
-				97273C9F1CDCEA8000B0A5E4 /* FNSNewsObject.m */,
+				97273CE11CDE08DA00B0A5E4 /* FNSNewsObject.h */,
+				97273CE21CDE08DA00B0A5E4 /* FNSNewsObject.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -143,8 +151,8 @@
 		97273CA21CDCEC2000B0A5E4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				97273CDF1CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld */,
 				97273CA31CDCEC2800B0A5E4 /* ManagedObjects */,
-				97273CA41CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodeld */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -152,10 +160,10 @@
 		97273CA31CDCEC2800B0A5E4 /* ManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
-				97273CA71CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.h */,
-				97273CA81CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */,
-				97273CA91CDCECB000B0A5E4 /* RSSNewsManagedObject.h */,
-				97273CAA1CDCECB000B0A5E4 /* RSSNewsManagedObject.m */,
+				97273CD91CDE08AD00B0A5E4 /* RSSNewsManagedObject.h */,
+				97273CDA1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m */,
+				97273CDB1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.h */,
+				97273CDC1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m */,
 			);
 			name = ManagedObjects;
 			sourceTree = "<group>";
@@ -163,9 +171,65 @@
 		97273CB01CDCED4C00B0A5E4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				97273CC71CDE087900B0A5E4 /* CoreLayer */,
 				97273C9C1CDCEA3600B0A5E4 /* Models */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		97273CC71CDE087900B0A5E4 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				97273CC81CDE087900B0A5E4 /* FNSMultipleRSSReciever */,
+				97273CCC1CDE087900B0A5E4 /* FNSRSSReciever */,
+			);
+			name = CoreLayer;
+			path = Classes/CoreLayer;
+			sourceTree = "<group>";
+		};
+		97273CC81CDE087900B0A5E4 /* FNSMultipleRSSReciever */ = {
+			isa = PBXGroup;
+			children = (
+				97273CC91CDE087900B0A5E4 /* FNSMultipleRSSReciever.h */,
+				97273CCA1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.h */,
+				97273CCB1CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m */,
+			);
+			path = FNSMultipleRSSReciever;
+			sourceTree = "<group>";
+		};
+		97273CCC1CDE087900B0A5E4 /* FNSRSSReciever */ = {
+			isa = PBXGroup;
+			children = (
+				97273CCD1CDE087900B0A5E4 /* FNSRSSReciever.h */,
+				97273CCE1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.h */,
+				97273CCF1CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m */,
+			);
+			path = FNSRSSReciever;
+			sourceTree = "<group>";
+		};
+		97273CD21CDE088B00B0A5E4 /* FastNewsCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				97273CD31CDE088B00B0A5E4 /* MultipleRSSRecieverTests */,
+				97273CD51CDE088B00B0A5E4 /* RSSRecieverTests */,
+			);
+			path = FastNewsCoreTests;
+			sourceTree = "<group>";
+		};
+		97273CD31CDE088B00B0A5E4 /* MultipleRSSRecieverTests */ = {
+			isa = PBXGroup;
+			children = (
+				97273CD41CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m */,
+			);
+			path = MultipleRSSRecieverTests;
+			sourceTree = "<group>";
+		};
+		97273CD51CDE088B00B0A5E4 /* RSSRecieverTests */ = {
+			isa = PBXGroup;
+			children = (
+				97273CD61CDE088B00B0A5E4 /* FNSRSSRecieverTests.m */,
+			);
+			path = RSSRecieverTests;
 			sourceTree = "<group>";
 		};
 		9743C9E51CDC96CF00FA8D9A = {
@@ -218,6 +282,7 @@
 		9743CA0A1CDC96D000FA8D9A /* FastNewsTests */ = {
 			isa = PBXGroup;
 			children = (
+				97273CD21CDE088B00B0A5E4 /* FastNewsCoreTests */,
 				9743CA0B1CDC96D000FA8D9A /* FastNewsTests.m */,
 				9743CA0D1CDC96D000FA8D9A /* Info.plist */,
 			);
@@ -462,13 +527,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97273CAB1CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */,
+				97273CE31CDE08DA00B0A5E4 /* FNSNewsObject.m in Sources */,
+				97273CDE1CDE08AD00B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */,
+				97273CD11CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m in Sources */,
 				9743C9F91CDC96CF00FA8D9A /* ViewController.m in Sources */,
-				97273CA61CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodeld in Sources */,
-				97273CA01CDCEA8000B0A5E4 /* FNSNewsObject.m in Sources */,
-				97273CAD1CDCECB000B0A5E4 /* RSSNewsManagedObject.m in Sources */,
+				97273CDD1CDE08AD00B0A5E4 /* RSSNewsManagedObject.m in Sources */,
 				9743C9F61CDC96CF00FA8D9A /* AppDelegate.m in Sources */,
 				9743C9F31CDC96CF00FA8D9A /* main.m in Sources */,
+				97273CD01CDE087900B0A5E4 /* FNSMultipleRSSRecieverImplementation.m in Sources */,
+				97273CE01CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,10 +543,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97273CAC1CDCECB000B0A5E4 /* RSSNewsManagedObject+CoreDataProperties.m in Sources */,
 				9743CA0C1CDC96D000FA8D9A /* FastNewsTests.m in Sources */,
-				97273CAE1CDCECB000B0A5E4 /* RSSNewsManagedObject.m in Sources */,
-				97273CA11CDCEA8000B0A5E4 /* FNSNewsObject.m in Sources */,
+				97273CD71CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m in Sources */,
+				97273CD81CDE088B00B0A5E4 /* FNSRSSRecieverTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,13 +790,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		97273CA41CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodeld */ = {
+		97273CDF1CDE08C300B0A5E4 /* FastNewsModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				97273CA51CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodel */,
 			);
-			currentVersion = 97273CA51CDCEC5700B0A5E4 /* FastNewsModel.xcdatamodel */;
-			path = FastNewsModel.xcdatamodeld;
+			name = FastNewsModel.xcdatamodeld;
+			path = ../Classes/Models/CoreData/FastNewsModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
