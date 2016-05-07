@@ -6,7 +6,7 @@ pod 'MagicalRecord', '~> 2.3'
 pod 'ViperMcFlurry'
 pod 'Typhoon', '~> 3.3'
 pod 'BNRSSFeedParser'
-
+pod 'Reachability'
 target 'FastNewsTests', :exclusive => true do
     pod 'OCMock', '~> 3.1'
 end
