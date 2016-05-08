@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "FNSNewsDetailPresenterInput.h"
+#import "FNSNewsDetailInteractorInput.h"
+#import "FNSNewsDetailViewInput.h"
+#import "FNSNewsDetailViewOutput.h"
 
-@interface FNSNewsDetailPresenter : NSObject <FNSNewsDetailPresenterInput>
+@interface FNSNewsDetailPresenter : NSObject <FNSNewsDetailPresenterInput, FNSNewsDetailViewOutput>
+
+- (instancetype)initWithView:(id<FNSNewsDetailViewInput>)view
+               andInteractor:(id<FNSNewsDetailInteractorInput>)interactor;
 
 @end

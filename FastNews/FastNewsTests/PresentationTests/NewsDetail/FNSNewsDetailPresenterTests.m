@@ -7,8 +7,17 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+#import "FNSNewsDetailPresenter.h"
+#import "FNSNewsDetailInteractorInput.h"
+#import "FNSNewsDetailViewInput.h"
+#import "FNSNewsObject.h"
 
 @interface FNSNewsDetailPresenterTests : XCTestCase
+
+@property (nonatomic, strong) FNSNewsDetailPresenter *presenter;
+@property (nonatomic, strong) id<FNSNewsDetailInteractorInput> interactor;
+@property (nonatomic, weak) id<FNSNewsDetailViewInput> view;
 
 @end
 
@@ -16,24 +25,47 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.view = OCMProtocolMock(@protocol(FNSNewsDetailViewInput));
+    self.interactor = OCMProtocolMock(@protocol(FNSNewsDetailInteractorInput));
+    self.presenter = [[FNSNewsDetailPresenter alloc] initWithView:self.view
+                                                    andInteractor:self.interactor];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.view = nil;
+    self.interactor = nil;
+    self.presenter = nil;
+    
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSetupView {
+    //given
+    FNSNewsObject *newsObject = [[FNSNewsObject alloc] init];
+    OCMStub([self.interactor obtainNewsWithNewsId:OCMOCK_ANY]).andReturn(newsObject);
+    
+    //when
+    [self.presenter setupView];
+    
+    //then
+    OCMVerify([self.view setupViewWithNewsObject:newsObject]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testConfigureModuleWithNewsId {
+//    given
+    NSString *newsId = @"newsId";
+    NSString *obtainNewsId = nil;
+//    when
+    [self.presenter configureCurrentModuleWithNewsObjectId:newsId];
+    
+//    then
+    if ([self.presenter respondsToSelector:@selector(newsId)]) {
+        obtainNewsId = [self.presenter performSelector:@selector(newsId)];
+    }
+    
+    XCTAssertEqualObjects(obtainNewsId, newsId);
+    
 }
+
 
 @end
