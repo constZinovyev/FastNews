@@ -7,8 +7,17 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+#import "FNSNewsDetailViewController.h"
+#import "FNSNewsDetailViewOutput.h"
+#import "FNSDateFormatter.h"
+#import "FNSNewsObject.h"
 
 @interface FNSNewsDetailViewControllerTests : XCTestCase
+
+@property (strong, nonatomic) FNSNewsDetailViewController *viewController;
+@property (strong, nonatomic) id<FNSNewsDetailViewOutput> output;
+@property (strong, nonatomic) id<FNSDateFormatter> dateFormatter;
 
 @end
 
@@ -16,24 +25,57 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.output = OCMProtocolMock(@protocol(FNSNewsDetailViewOutput));
+    self.dateFormatter = OCMProtocolMock(@protocol(FNSDateFormatter));
+    self.viewController = [[FNSNewsDetailViewController alloc] init];
+    self.viewController.output = self.output;
+    self.viewController.dateFormatter = self.dateFormatter;
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.output = nil;
+    self.dateFormatter = nil;
+    self.viewController = nil;
+
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSuccessViewDidLoad {
+    // given
+    
+    // when
+    [self.viewController viewDidLoad];
+    
+    // then
+    OCMVerify([self.output setupView]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testSuccessSetupViewWithNewsObject {
+    //given
+    FNSNewsObject *newsObject = [[FNSNewsObject alloc] init];
+    newsObject.title = @"title";
+    newsObject.author = @"author";
+    newsObject.content = @"content";
+    newsObject.date = [NSDate dateWithTimeIntervalSince1970:0];
+    NSString *stringDate = @"03:00 01/01";
+    OCMStub([self.dateFormatter stringFullTimeFromDate:OCMOCK_ANY]).andReturn(stringDate);
+    UITextView *textViewContent = [[UITextView alloc] init];
+    UITextView *textViewTitle = [[UITextView alloc] init];
+    UILabel *labelAuthor = [[UILabel alloc] init];
+    UILabel *labelPubDate = [[UILabel alloc] init];
+    self.viewController.newsContent = textViewContent;
+    self.viewController.newsTitle = textViewTitle;
+    self.viewController.newsPubDate = labelPubDate;
+    self.viewController.newsAuthor = labelAuthor;
+    
+    //when
+    [self.viewController setupViewWithNewsObject:newsObject];
+    
+    //then
+    XCTAssertEqualObjects(newsObject.title, self.viewController.newsTitle.text);
+    XCTAssertEqualObjects(newsObject.author, self.viewController.newsAuthor.text);
+    XCTAssertEqualObjects(newsObject.content, self.viewController.newsContent.text);
+    XCTAssertEqualObjects(stringDate, self.viewController.newsPubDate.text);
 }
 
 @end
