@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@protocol FNSDateFormatter;
+#import "FNSDateFormatter.h"
 
 @interface FNSDateFormatterImplementation : NSObject <FNSDateFormatter>
 

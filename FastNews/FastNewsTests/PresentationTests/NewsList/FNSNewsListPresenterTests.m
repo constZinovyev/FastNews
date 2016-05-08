@@ -74,7 +74,7 @@ static const CGFloat kTestExpectationTimeout = 2.0f;
     [self.presenter setupView];
     
     //then
-    [self waitForExpectationsWithTimeout:2.0f handler:^(NSError * _Nullable error) {
+    [self waitForExpectationsWithTimeout:kTestExpectationTimeout handler:^(NSError * _Nullable error) {
         OCMVerify([self.view setupViewWithEventList:feed]);
     }];
 }
