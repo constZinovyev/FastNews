@@ -1,14 +1,14 @@
 //
-//  FNSNewsDetailInteractor.m
+//  FNSNewsListInteractor.m
 //  FastNews
 //
 //  Created by Сonstantin Zinovyev on 08.05.16.
 //  Copyright © 2016 ConstZin. All rights reserved.
 //
 
-#import "FNSNewsDetailInteractor.h"
+#import "FNSNewsListInteractor.h"
 
-@interface FNSNewsDetailInteractor ()
+@interface FNSNewsListInteractor ()
 
 @property (strong, nonatomic) id<FNSNewsService> newsService;
 @property (strong, nonatomic) id<FNSMapper> mapper;
@@ -17,8 +17,7 @@
 
 @end
 
-
-@implementation FNSNewsDetailInteractor
+@implementation FNSNewsListInteractor
 
 - (instancetype)initWithNewsService:(id<FNSNewsService>)newsService
                           andMapper:(id<FNSMapper>)mapper

@@ -1,13 +1,13 @@
 //
-//  FNSNewsListInteractor.h
+//  FNSNewsDetailRouter.h
 //  FastNews
 //
 //  Created by Сonstantin Zinovyev on 08.05.16.
 //  Copyright © 2016 ConstZin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface FNSNewsListInteractor : UIViewController
+@interface FNSNewsListRouter : NSObject
 
 @end

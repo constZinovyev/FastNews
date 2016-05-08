@@ -8,13 +8,12 @@
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
-#import "FNSNewsDetailInteractor.h"
+#import "FNSNewsListInteractor.h"
 #import "FNSMapper.h"
 #import "FNSNewsService.h"
 #import "FNSSourcesList.h"
 #import "FNSReachability.h"
 #import "FNSNewsObject.h"
-#import <MagicalRecord/MagicalRecord.h>
 
 static NSString *const kLinkLentaRSS = @"https://lenta.ru/rss";
 static NSString *const kLinkGazetaRSS = @"http://www.gazeta.ru/export/rss/lenta.xml";
@@ -22,7 +21,7 @@ static const CGFloat kTestExpectationTimeout = 2.0f;
 
 @interface FNSNewsListInteractorTests : XCTestCase
 
-@property (strong, nonatomic) FNSNewsDetailInteractor *interactor;
+@property (strong, nonatomic) FNSNewsListInteractor *interactor;
 @property (strong, nonatomic) id<FNSNewsService> mockNewsService;
 @property (strong, nonatomic) id<FNSMapper> mockMapper;
 @property (strong, nonatomic) id<FNSReachability> mockReachabilityInternetConnection;
@@ -39,7 +38,7 @@ static const CGFloat kTestExpectationTimeout = 2.0f;
     self.mockMapper = OCMProtocolMock(@protocol(FNSMapper));
     self.mockReachabilityInternetConnection = OCMProtocolMock(@protocol(FNSReachability));
     self.mockSourcesList = OCMProtocolMock(@protocol(FNSSourcesList));
-    self.interactor = [[FNSNewsDetailInteractor alloc] initWithNewsService:self.mockNewsService
+    self.interactor = [[FNSNewsListInteractor alloc] initWithNewsService:self.mockNewsService
                                                                  andMapper:self.mockMapper
                                                            andReachability:self.mockReachabilityInternetConnection
                                                             andSourcesList:self.mockSourcesList];
