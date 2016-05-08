@@ -7,8 +7,21 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+#import "FNSNewsListPresenter.h"
+#import "FNSNewsListInteractorInput.h"
+#import "FNSNewsListViewInput.h"
+#import "FNSNewsListRouterInput.h"
+#import "FNSNewsObject.h"
+
+static const CGFloat kTestExpectationTimeout = 2.0f;
 
 @interface FNSNewsListPresenterTests : XCTestCase
+
+@property (nonatomic, strong) FNSNewsListPresenter *presenter;
+@property (nonatomic, strong) id<FNSNewsListViewInput> view;
+@property (nonatomic, strong) id<FNSNewsListInteractorInput> interactor;
+@property (nonatomic, strong) id<FNSNewsListRouterInput> router;
 
 @end
 
@@ -16,23 +29,53 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    self.view = OCMProtocolMock(@protocol(FNSNewsListViewInput));
+    self.interactor = OCMProtocolMock(@protocol(FNSNewsListInteractorInput));
+    self.router = OCMProtocolMock(@protocol(FNSNewsListRouterInput));
+    self.presenter = [[FNSNewsListPresenter alloc] initWithView:self.view
+                                                  andInteractor:self.interactor
+                                                      andRouter:self.router];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.view = nil;
+    self.interactor = nil;
+    self.router = nil;
+    self.presenter = nil;
+    
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testDidSelectCellWithNewsObject {
+    //given
+    NSString *newsId = @"newsId";
+    FNSNewsObject *newsObject = [[FNSNewsObject alloc] init];
+    newsObject.link = [NSURL URLWithString:newsId];
+    
+    //when
+    [self.presenter didSelectCellWithNews:newsObject];
+    
+    //then
+    OCMVerify([self.router openNewsDetailWithNewsId:newsId]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+- (void)testSetupView {
+    NSArray *feed = @[];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Block not call"];
+    //given
+    OCMStub([self.interactor obtainNewsListWithCompletionBlock:OCMOCK_ANY]).andDo(^(NSInvocation *invocation) {
+        void (^block)(NSArray*, NSError*);
+        [invocation getArgument:&block atIndex:2];
+        block(feed,nil);
+        [expectation fulfill];
+    });
+    //when
+    [self.presenter setupView];
+    
+    //then
+    [self waitForExpectationsWithTimeout:2.0f handler:^(NSError * _Nullable error) {
+        OCMVerify([self.view setupViewWithEventList:feed]);
     }];
 }
 

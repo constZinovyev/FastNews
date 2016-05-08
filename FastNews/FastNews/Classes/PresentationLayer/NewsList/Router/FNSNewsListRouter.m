@@ -7,7 +7,26 @@
 //
 
 #import "FNSNewsListRouter.h"
+#import "FNSNewsDetailPresenterInput.h"
 
 @implementation FNSNewsListRouter
+
+static NSString *const kDetailRSSNewsSegue = @"DetailRSSNewsSegue";
+
+- (instancetype)initWithTransitionHandler:(id<RamblerViperModuleTransitionHandlerProtocol>)transitionHandler {
+    self = [super init];
+    if (self) {
+        _transitionHandler = transitionHandler;
+    }
+    return self;
+}
+
+- (void)openNewsDetailWithNewsId:(NSString *)NewsId{
+    
+    [[self.transitionHandler openModuleUsingSegue:kDetailRSSNewsSegue] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<FNSNewsDetailPresenterInput> moduleInput) {
+        [moduleInput configureCurrentModuleWithNewsObjectId:NewsId];
+        return nil;
+    }];
+}
 
 @end

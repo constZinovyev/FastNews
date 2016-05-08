@@ -7,7 +7,7 @@
 //
 typedef void (^NewsCompletionBlock)(NSArray* feed, NSError *error);
 
-@protocol FNSNewsDetailInteractorInput <NSObject>
+@protocol FNSNewsListInteractorInput <NSObject>
 
 - (void)obtainNewsListWithCompletionBlock:(NewsCompletionBlock)completionBlock;
 

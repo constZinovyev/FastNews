@@ -7,8 +7,15 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <ViperMcFlurry/ViperMcFlurry.h>
+#import <OCMock/OCMock.h>
+#import "FNSNewsListRouter.h"
+#import "FNSNewsDetailPresenter.h"
 
 @interface FNSNewsListRouterTests : XCTestCase
+@property (strong, nonatomic) FNSNewsListRouter *router;
+@property (strong, nonatomic) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
+@property (strong, nonatomic) FNSNewsDetailPresenter *presenter;
 
 @end
 
@@ -16,24 +23,40 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.transitionHandler = OCMProtocolMock(@protocol(RamblerViperModuleTransitionHandlerProtocol));
+    
+    self.router = [[FNSNewsListRouter alloc] initWithTransitionHandler:self.transitionHandler];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.transitionHandler = nil;
+    self.router = nil;
+    
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+- (void)testOpenModule {
+    //given
+    NSString *newsObjectId = @"id";
+    self.presenter = OCMClassMock([FNSNewsDetailPresenter class]);
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Block not call"];
+    RamblerViperOpenModulePromise *promise = OCMClassMock([RamblerViperOpenModulePromise class]);
+    OCMStub([self.transitionHandler openModuleUsingSegue:OCMOCK_ANY]).andReturn(promise);
+    OCMStub([promise thenChainUsingBlock:OCMOCK_ANY]).andDo(^(NSInvocation *invocation) {
+        RamblerViperModuleLinkBlock block;
+        [invocation getArgument:&block atIndex:2];
+        block(self.presenter);
+        [expectation fulfill];
+    });
+    
+    //when
+    [self.router openNewsDetailWithNewsId:newsObjectId];
+    
+    //then
+    [self waitForExpectationsWithTimeout:2.0f handler:^(NSError * _Nullable error) {
+        OCMVerify([self.presenter configureCurrentModuleWithNewsObjectId:newsObjectId]);
     }];
+    
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  FNSNewsDetailPresenter.h
+//  FNSNewsListViewInput.h
 //  FastNews
 //
 //  Created by Сonstantin Zinovyev on 08.05.16.
@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FNSNewsDetailPresenterInput.h"
 
-@interface FNSNewsDetailPresenter : NSObject <FNSNewsDetailPresenterInput>
+@protocol FNSNewsListViewInput <NSObject>
+
+-(void)setupViewWithEventList:(NSArray*)feed;
 
 @end

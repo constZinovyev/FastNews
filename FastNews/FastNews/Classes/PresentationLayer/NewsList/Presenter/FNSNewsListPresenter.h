@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FNSNewsListViewOutput.h"
+#import "FNSNewsListInteractorInput.h"
+#import "FNSNewsListViewInput.h"
+#import "FNSNewsListRouterInput.h"
 
-@interface FNSNewsListPresenter : UIViewController
+@interface FNSNewsListPresenter : NSObject <FNSNewsListViewOutput>
 
+- (instancetype)initWithView:(id<FNSNewsListViewInput>)view
+               andInteractor:(id<FNSNewsListInteractorInput>)interactor
+                   andRouter:(id<FNSNewsListRouterInput>)router;
 @end
