@@ -12,7 +12,7 @@
 #import "FNSMultipleRSSReciever.h"
 #import "FNSRSSRecieverImplementation.h"
 
-static const CGFloat kTestExpectationTimeout = 5.0f;
+static const CGFloat kTestExpectationTimeout = 2.0f;
 
 @interface FNSMultipleRSSRecieverTests : XCTestCase
 
@@ -75,8 +75,6 @@ static const CGFloat kTestExpectationTimeout = 5.0f;
         [invocation getArgument:&block atIndex:3];
         block(nil,errorNews);
     });
-    
-    
     
     //    when
     [self.multipleRecieverRSS obtainRSSFeedFromSources:@[@"", @""] withCompletionBlock:^(NSArray *feed, NSError *error) {
