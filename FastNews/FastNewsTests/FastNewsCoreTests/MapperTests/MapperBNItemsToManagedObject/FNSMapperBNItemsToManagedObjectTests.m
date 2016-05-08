@@ -14,6 +14,7 @@
 #import "BNRSSFeedItemEnclosure.h"
 #import "FNSNewsItemManagedObject.h"
 
+static CGFloat const kTestExpectationTimeout = 2.0f;
 @interface FNSMapperBNItemsToManagedObjectTests : XCTestCase
 
 @property (strong, nonatomic) FNSMapperBNItemsToManagedObject *mapper;
@@ -67,6 +68,9 @@
     FNSNewsItemManagedObject *testObject = [self.mapper mappingFromObject:feedItem];
     
     //then
+    BOOL isManagedObject = [testObject isKindOfClass:[FNSNewsItemManagedObject class]];
+    XCTAssertTrue(isManagedObject);
+    
     XCTAssertEqualObjects(rightObject.title, testObject.title);
     XCTAssertEqualObjects(rightObject.title, testObject.title);
     XCTAssertEqualObjects(rightObject.date, testObject.date);
@@ -77,4 +81,24 @@
     
 }
 
+- (void)testSaveNewsInCoreData{
+    //given
+    XCTestExpectation *expectation = [self expectationWithDescription:@"Block not call"];
+    
+    BNRSSFeedItem *feedItem = [[BNRSSFeedItem alloc] init];
+    
+    //    when
+    [self.mapper mappingFromObject:feedItem];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
+        [expectation fulfill];
+    }];
+
+    //then
+    [self waitForExpectationsWithTimeout:kTestExpectationTimeout handler:^(NSError * _Nullable error) {
+        NSArray *newsItem = [FNSNewsItemManagedObject MR_findAll];
+        BOOL isObjectInCoreData = [newsItem count] == 1;
+        XCTAssertTrue(isObjectInCoreData);
+    }];
+    
+}
 @end
