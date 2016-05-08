@@ -10,6 +10,6 @@
 
 @protocol FNSNewsListViewInput <NSObject>
 
--(void)setupViewWithEventList:(NSArray*)feed;
+-(void)setupViewWithNewsList:(NSArray*)feed;
 
 @end

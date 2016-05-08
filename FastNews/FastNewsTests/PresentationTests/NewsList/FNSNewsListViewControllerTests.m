@@ -7,8 +7,18 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+#import "FNSNewsListViewController.h"
+#import "FNSNewsListViewOutput.h"
+#import "FNSTableViewDelegate.h"
+#import "FNSTableViewDataSource.h"
 
 @interface FNSNewsListViewControllerTests : XCTestCase
+
+@property (strong, nonatomic) FNSNewsListViewController *viewController;
+@property (strong, nonatomic) id<FNSNewsListViewOutput> output;
+@property (nonatomic, strong) id <FNSTableViewDelegate> delegateTableView;
+@property (nonatomic, strong) id <FNSTableViewDataSource> dataSourceTableView;
 
 @end
 
@@ -16,24 +26,54 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.output = OCMProtocolMock(@protocol(FNSNewsListViewOutput));
+    self.delegateTableView = OCMProtocolMock(@protocol(FNSTableViewDelegate));
+    self.dataSourceTableView = OCMProtocolMock(@protocol(FNSTableViewDataSource));
+    self.viewController = [[FNSNewsListViewController alloc] init];
+    self.viewController.output = self.output;
+    self.viewController.dataSourceTableView = self.dataSourceTableView;
+    self.viewController.delegateTableView = self.delegateTableView;
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.output = nil;
+    self.delegateTableView = nil;
+    self.dataSourceTableView = nil;
+    self.viewController = nil;
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSuccessViewDidLoadOutputSetup {
+    // given
+    
+    // when
+    [self.viewController viewDidLoad];
+    
+    // then
+    OCMVerify([self.output setupView]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testSuccessViewDidLoadStartSetting {
+    // given
+    
+    // when
+    [self.viewController viewDidLoad];
+    
+    // then
+    XCTAssertNotNil(self.viewController.title);
+    XCTAssertNotNil(self.viewController.tableView.delegate);
+    XCTAssertNotNil(self.viewController.tableView.dataSource);
 }
 
+- (void)testSuccessSetupTableViewNews {
+    // given
+    NSArray *news = @[];
+    
+    // when
+    [self.viewController setupViewWithNewsList:news];
+    
+    // then
+    OCMVerify([self.dataSourceTableView setDataForTableViewDataSource:news]);
+    OCMVerify([self.delegateTableView setDataForTableViewDelegate:news]);
+}
 @end

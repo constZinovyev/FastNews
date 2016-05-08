@@ -133,9 +133,9 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="BIS-1H-xRo"/>
                                         <exclude reference="tpE-0T-IVV"/>
                                         <exclude reference="uaO-Xq-UGy"/>
-                                        <exclude reference="BIS-1H-xRo"/>
                                     </mask>
                                 </variation>
                             </scrollView>

@@ -38,7 +38,7 @@
 - (void)setupView {
     __weak typeof(self) weakSelf = self;
     [self.interactor obtainNewsListWithCompletionBlock:^(id feed, NSError *error) {
-        [weakSelf.view setupViewWithEventList:feed];
+        [weakSelf.view setupViewWithNewsList:feed];
     }];
 }
 
