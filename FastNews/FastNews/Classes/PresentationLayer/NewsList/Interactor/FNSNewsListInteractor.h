@@ -13,7 +13,7 @@
 #import "FNSSourcesList.h"
 #import "FNSReachability.h"
 
-@interface FNSNewsListInteractor : UIViewController <FNSNewsDetailInteractorInput>
+@interface FNSNewsListInteractor : UIViewController <FNSNewsListInteractorInput>
 
 - (instancetype)initWithNewsService:(id<FNSNewsService>)newsService
                           andMapper:(id<FNSMapper>)mapper

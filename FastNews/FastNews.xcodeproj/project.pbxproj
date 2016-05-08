@@ -948,7 +948,6 @@ fi
 				<string>97E4DC611CDF85A500E4683E</string>
 				<string>97D00FB11CDF186700B5372A</string>
 				<string>97E4DC6C1CDF864600E4683E</string>
-				<string>97E4DC6A1CDF863300E4683E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -2366,8 +2365,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>PresentationTests</string>
 			<key>path</key>
 			<string>PresentationTests</string>
 			<key>sourceTree</key>
@@ -2382,8 +2379,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>PresentationLayer</string>
 			<key>path</key>
 			<string>PresentationLayer</string>
 			<key>sourceTree</key>
@@ -2400,8 +2395,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NewsDetail</string>
 			<key>path</key>
 			<string>NewsDetail</string>
 			<key>sourceTree</key>
@@ -2419,8 +2412,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NewsList</string>
 			<key>path</key>
 			<string>NewsList</string>
 			<key>sourceTree</key>
@@ -2435,8 +2426,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Presenter</string>
 			<key>path</key>
 			<string>Presenter</string>
 			<key>sourceTree</key>
@@ -2451,8 +2440,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Presenter</string>
 			<key>path</key>
 			<string>Presenter</string>
 			<key>sourceTree</key>
@@ -2468,8 +2455,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Interactor</string>
 			<key>path</key>
 			<string>Interactor</string>
 			<key>sourceTree</key>
@@ -2481,11 +2466,10 @@ fi
 			<array>
 				<string>97E4DC751CDF86D800E4683E</string>
 				<string>97E4DC761CDF86D800E4683E</string>
+				<string>97E4DC871CDFB37700E4683E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Router</string>
 			<key>path</key>
 			<string>Router</string>
 			<key>sourceTree</key>
@@ -2500,8 +2484,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
 			<key>path</key>
 			<string>View</string>
 			<key>sourceTree</key>
@@ -2517,8 +2499,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Interactor</string>
 			<key>path</key>
 			<string>Interactor</string>
 			<key>sourceTree</key>
@@ -2530,11 +2510,11 @@ fi
 			<array>
 				<string>97E4DC811CDF872A00E4683E</string>
 				<string>97E4DC821CDF872A00E4683E</string>
+				<string>97E4DC881CDFB38B00E4683E</string>
+				<string>97E4DC891CDFB39B00E4683E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
 			<key>path</key>
 			<string>View</string>
 			<key>sourceTree</key>
@@ -2546,8 +2526,6 @@ fi
 			<array/>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Assembly</string>
 			<key>path</key>
 			<string>Assembly</string>
 			<key>sourceTree</key>
@@ -2559,8 +2537,6 @@ fi
 			<array/>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Assembly</string>
 			<key>path</key>
 			<string>Assembly</string>
 			<key>sourceTree</key>
@@ -2577,8 +2553,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NewsList</string>
 			<key>path</key>
 			<string>NewsList</string>
 			<key>sourceTree</key>
@@ -2590,13 +2564,10 @@ fi
 			<array>
 				<string>97E4DC6B1CDF864600E4683E</string>
 				<string>97E4DC6D1CDF865400E4683E</string>
-				<string>97E4DC691CDF863300E4683E</string>
 				<string>97E4DC671CDF862800E4683E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NewsDetail</string>
 			<key>path</key>
 			<string>NewsDetail</string>
 			<key>sourceTree</key>
@@ -2699,26 +2670,6 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>97E4DC671CDF862800E4683E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>97E4DC691CDF863300E4683E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FNSNewsDetailRouterTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97E4DC6A1CDF863300E4683E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>97E4DC691CDF863300E4683E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3016,6 +2967,45 @@ fi
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>FNSNewsListInteractorInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC871CDFB37700E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSNewsListRouterInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC881CDFB38B00E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSNewsListViewInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC891CDFB39B00E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSNewsListViewOutput.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
