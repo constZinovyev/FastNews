@@ -30,6 +30,8 @@
 		97D00FA71CDE3A0300B5372A /* FNSMapperArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D00FA61CDE3A0300B5372A /* FNSMapperArrayTests.m */; };
 		97D00FAD1CDF0C3A00B5372A /* FNSNewsServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D00FAC1CDF0C3A00B5372A /* FNSNewsServiceImplementation.m */; };
 		97D00FB11CDF186700B5372A /* FNSNewsServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D00FB01CDF186700B5372A /* FNSNewsServiceTests.m */; };
+		97E4DC3B1CDF571900E4683E /* FNSDateFormatterImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E4DC3A1CDF571900E4683E /* FNSDateFormatterImplementation.m */; };
+		97E4DC3E1CDF583100E4683E /* FNSDateFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E4DC3D1CDF583100E4683E /* FNSDateFormatterTests.m */; };
 		9B8FC3AEFF98CA189FDAF274 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500E0A3AC9D70A15E797E76F /* libPods.a */; };
 		E0ECE39505369FC4A971DE18 /* libPods-FastNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 806EF3C1FFBD7BD2EA1C5E95 /* libPods-FastNewsTests.a */; };
 /* End PBXBuildFile section */
@@ -99,6 +101,10 @@
 		97D00FAB1CDF0C3A00B5372A /* FNSNewsServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSNewsServiceImplementation.h; sourceTree = "<group>"; };
 		97D00FAC1CDF0C3A00B5372A /* FNSNewsServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSNewsServiceImplementation.m; sourceTree = "<group>"; };
 		97D00FB01CDF186700B5372A /* FNSNewsServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSNewsServiceTests.m; sourceTree = "<group>"; };
+		97E4DC381CDF570B00E4683E /* FNSDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSDateFormatter.h; sourceTree = "<group>"; };
+		97E4DC391CDF571900E4683E /* FNSDateFormatterImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNSDateFormatterImplementation.h; sourceTree = "<group>"; };
+		97E4DC3A1CDF571900E4683E /* FNSDateFormatterImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSDateFormatterImplementation.m; sourceTree = "<group>"; };
+		97E4DC3D1CDF583100E4683E /* FNSDateFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSDateFormatterTests.m; sourceTree = "<group>"; };
 		B918241879C925FFA4EB0B85 /* Pods-FastNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBBA40615985A119C993A790 /* Pods-FastNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0E36A0F3DF31FEC0600D2C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 		97273CC71CDE087900B0A5E4 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				97E4DC371CDF56E000E4683E /* DateFormatter */,
 				97D00F781CDE21AD00B5372A /* FNSMapper */,
 				97273CC81CDE087900B0A5E4 /* FNSMultipleRSSReciever */,
 				97273CCC1CDE087900B0A5E4 /* FNSRSSReciever */,
@@ -315,10 +322,10 @@
 		97D00F781CDE21AD00B5372A /* FNSMapper */ = {
 			isa = PBXGroup;
 			children = (
+				97D00F791CDE21CF00B5372A /* FNSMapper.h */,
 				97D00FA41CDE398E00B5372A /* MapperArray */,
 				97D00F861CDE22E000B5372A /* MapperBNItemsToManagedObject */,
 				97D00F891CDE230500B5372A /* MapperManagedObjectToNewsObject */,
-				97D00F791CDE21CF00B5372A /* FNSMapper.h */,
 			);
 			path = FNSMapper;
 			sourceTree = "<group>";
@@ -344,6 +351,7 @@
 		97D00F8C1CDE257800B5372A /* MapperTests */ = {
 			isa = PBXGroup;
 			children = (
+				97E4DC3C1CDF581C00E4683E /* DateFormatter */,
 				97D00FA51CDE39BF00B5372A /* MapperArray */,
 				97D00F8D1CDE257F00B5372A /* MapperBNItemsToManagedObject */,
 				97D00F8E1CDE258100B5372A /* MapperManagedObjectToNewsObject */,
@@ -434,6 +442,24 @@
 			children = (
 			);
 			name = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		97E4DC371CDF56E000E4683E /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				97E4DC381CDF570B00E4683E /* FNSDateFormatter.h */,
+				97E4DC391CDF571900E4683E /* FNSDateFormatterImplementation.h */,
+				97E4DC3A1CDF571900E4683E /* FNSDateFormatterImplementation.m */,
+			);
+			name = DateFormatter;
+			sourceTree = "<group>";
+		};
+		97E4DC3C1CDF581C00E4683E /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				97E4DC3D1CDF583100E4683E /* FNSDateFormatterTests.m */,
+			);
+			name = DateFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -673,6 +699,7 @@
 				97D00FAD1CDF0C3A00B5372A /* FNSNewsServiceImplementation.m in Sources */,
 				97D00F821CDE22A600B5372A /* FNSMapperManagedObjectToNewsObject.m in Sources */,
 				97D00FA31CDE31BF00B5372A /* FNSNewsItemManagedObject.m in Sources */,
+				97E4DC3B1CDF571900E4683E /* FNSDateFormatterImplementation.m in Sources */,
 				97D00F851CDE22B900B5372A /* FNSMapperArrayObjects.m in Sources */,
 				9743C9F61CDC96CF00FA8D9A /* AppDelegate.m in Sources */,
 				9743C9F31CDC96CF00FA8D9A /* main.m in Sources */,
@@ -685,6 +712,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E4DC3E1CDF583100E4683E /* FNSDateFormatterTests.m in Sources */,
 				97D00F941CDE25C700B5372A /* FNSMapperBNItemsToManagedObjectTests.m in Sources */,
 				97D00F901CDE25A600B5372A /* FNSMapperManagedObjectToNewsObjectTests.m in Sources */,
 				97273CD71CDE088B00B0A5E4 /* FNSMultipleRSSRecieverTests.m in Sources */,

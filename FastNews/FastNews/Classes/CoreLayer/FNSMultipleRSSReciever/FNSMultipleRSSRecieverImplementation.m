@@ -13,7 +13,7 @@ typedef void(^RSSFeedBlock)(NSArray *feed, NSError *error);
 
 @interface FNSMultipleRSSRecieverImplementation ()
 
-@property (strong, nonatomic) id <FNSRSSReciever> recieverRSS;
+@property (strong, nonatomic) id<FNSRSSReciever> recieverRSS;
 @property (nonatomic, strong) NSEnumerator *enumeratorSources;
 @property (nonatomic, strong) NSMutableArray *feedFromSources;
 @property (nonatomic, strong) NSArray *sourcesRSS;
@@ -22,7 +22,7 @@ typedef void(^RSSFeedBlock)(NSArray *feed, NSError *error);
 
 @implementation FNSMultipleRSSRecieverImplementation
 
-- (instancetype)initWithRSSReciever:(id <FNSRSSReciever>)reciever{
+- (instancetype)initWithRSSReciever:(id<FNSRSSReciever>)reciever{
     self = [super init];
     
     if (self) {
@@ -57,10 +57,5 @@ typedef void(^RSSFeedBlock)(NSArray *feed, NSError *error);
         block(weakSelf.feedFromSources, nil);
     }
 }
-
-
-//- (void)obtainRSSFeedFromSources:(NSArray*)sources withCompletionBlock:(RSSFeedBlock)block{
-//    block(@[@3, @1, @4, @2, @3, @1, @4, @2], nil);
-//}
 
 @end

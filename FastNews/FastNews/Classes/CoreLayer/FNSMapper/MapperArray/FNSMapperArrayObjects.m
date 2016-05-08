@@ -10,7 +10,7 @@
 
 @interface FNSMapperArrayObjects ()
 
-@property (nonatomic, strong) id <FNSMapper> mapperSingleObject;
+@property (nonatomic, strong) id<FNSMapper> mapperSingleObject;
 
 @end
 

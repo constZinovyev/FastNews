@@ -21,8 +21,8 @@ static const CGFloat kTestExpectationTimeout = 2.0f;
 @interface FNSNewsServiceTests : XCTestCase
 
 @property (strong, nonatomic) FNSNewsServiceImplementation *newsService;
-@property (strong, nonatomic) id <FNSMultipleRSSReciever> multipleRSSReciever;
-@property (strong, nonatomic) id <FNSMapper> mapper;
+@property (strong, nonatomic) id<FNSMultipleRSSReciever> multipleRSSReciever;
+@property (strong, nonatomic) id<FNSMapper> mapper;
 
 @end
 

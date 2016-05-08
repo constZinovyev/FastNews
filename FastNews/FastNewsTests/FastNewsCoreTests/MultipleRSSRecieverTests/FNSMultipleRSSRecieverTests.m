@@ -16,7 +16,7 @@ static const CGFloat kTestExpectationTimeout = 2.0f;
 
 @interface FNSMultipleRSSRecieverTests : XCTestCase
 
-@property (strong, nonatomic) id <FNSMultipleRSSReciever> multipleRecieverRSS;
+@property (strong, nonatomic) id<FNSMultipleRSSReciever> multipleRecieverRSS;
 @property (strong, nonatomic) id recieverRSS;
 
 @end

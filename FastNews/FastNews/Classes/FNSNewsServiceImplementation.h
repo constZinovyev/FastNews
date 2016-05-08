@@ -13,6 +13,6 @@
 
 @interface FNSNewsServiceImplementation : NSObject <FNSNewsService>
 
-- (instancetype)initWithMultipleRSSReciever:(id <FNSMultipleRSSReciever>)reciever andMapper:(id <FNSMapper>)mapper;
+- (instancetype)initWithMultipleRSSReciever:(id<FNSMultipleRSSReciever>)reciever andMapper:(id<FNSMapper>)mapper;
 
 @end

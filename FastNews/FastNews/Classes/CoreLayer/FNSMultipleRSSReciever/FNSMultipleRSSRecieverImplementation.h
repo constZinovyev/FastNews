@@ -13,6 +13,6 @@
 
 @interface FNSMultipleRSSRecieverImplementation : NSObject <FNSMultipleRSSReciever>
 
-- (instancetype)initWithRSSReciever:(id <FNSRSSReciever>)reciever;
+- (instancetype)initWithRSSReciever:(id<FNSRSSReciever>)reciever;
 
 @end

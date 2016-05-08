@@ -13,14 +13,14 @@
 
 @interface FNSNewsServiceImplementation ()
 
-@property (strong, nonatomic) id <FNSMultipleRSSReciever> multipleRSSReciever;
-@property (strong, nonatomic) id <FNSMapper> mapper;
+@property (strong, nonatomic) id<FNSMultipleRSSReciever> multipleRSSReciever;
+@property (strong, nonatomic) id<FNSMapper> mapper;
 
 @end
 
 @implementation FNSNewsServiceImplementation
 
-- (instancetype)initWithMultipleRSSReciever:(id <FNSMultipleRSSReciever>)reciever andMapper:(id <FNSMapper>)mapper {
+- (instancetype)initWithMultipleRSSReciever:(id<FNSMultipleRSSReciever>)reciever andMapper:(id<FNSMapper>)mapper {
     self = [super init];
     
     if (self) {
