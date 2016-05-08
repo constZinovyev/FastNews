@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FNSNewsDetailPresenterInput.h"
 
-@interface FNSNewsDetailPresenter : NSObject
+@interface FNSNewsDetailPresenter : NSObject <FNSNewsDetailPresenterInput>
 
 @end

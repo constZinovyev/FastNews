@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FNSNewsListRouterInput.h"
+#import <ViperMcFlurry/ViperMcFlurry.h>
 
-@interface FNSNewsListRouter : NSObject
+@interface FNSNewsListRouter : NSObject <FNSNewsListRouterInput>
+
+@property (weak, nonatomic) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
+- (instancetype)initWithTransitionHandler:(id<RamblerViperModuleTransitionHandlerProtocol>)transitionHandler;
 
 @end
