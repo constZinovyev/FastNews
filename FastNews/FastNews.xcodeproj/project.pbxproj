@@ -621,11 +621,13 @@ fi
 				<string>97E4DC3B1CDF571900E4683E</string>
 				<string>97E4DC831CDF872A00E4683E</string>
 				<string>97E4DC741CDF86C500E4683E</string>
+				<string>97E4DC9D1CDFE6BB00E4683E</string>
 				<string>97D00F851CDE22B900B5372A</string>
 				<string>97E4DC7D1CDF870D00E4683E</string>
 				<string>9743C9F61CDC96CF00FA8D9A</string>
 				<string>9743C9F31CDC96CF00FA8D9A</string>
 				<string>97273CD01CDE087900B0A5E4</string>
+				<string>97E4DC9A1CDFE6B100E4683E</string>
 				<string>97D00F9C1CDE315800B5372A</string>
 			</array>
 			<key>isa</key>
@@ -934,7 +936,9 @@ fi
 			<key>files</key>
 			<array>
 				<string>97E4DC3E1CDF583100E4683E</string>
+				<string>97E4DCA31CDFE70800E4683E</string>
 				<string>97D00F941CDE25C700B5372A</string>
+				<string>97E4DCA51CDFE72B00E4683E</string>
 				<string>97E4DC491CDF608900E4683E</string>
 				<string>97E4DC661CDF861400E4683E</string>
 				<string>97E4DC681CDF862800E4683E</string>
@@ -944,6 +948,7 @@ fi
 				<string>97D00F901CDE25A600B5372A</string>
 				<string>97273CD71CDE088B00B0A5E4</string>
 				<string>97D00FA71CDE3A0300B5372A</string>
+				<string>97E4DCA11CDFE6FB00E4683E</string>
 				<string>97E4DC5F1CDF859400E4683E</string>
 				<string>97273CD81CDE088B00B0A5E4</string>
 				<string>97E4DC611CDF85A500E4683E</string>
@@ -2551,6 +2556,8 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>97E4DC9F1CDFE6E600E4683E</string>
+				<string>97E4DC9E1CDFE6E000E4683E</string>
 				<string>97E4DC601CDF85A500E4683E</string>
 				<string>97E4DC5E1CDF859400E4683E</string>
 				<string>97E4DC621CDF85C400E4683E</string>
@@ -3072,14 +3079,16 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>97E4DC9B1CDFE6BB00E4683E</string>
+				<string>97E4DC9C1CDFE6BB00E4683E</string>
+				<string>97E4DC981CDFE6B100E4683E</string>
+				<string>97E4DC991CDFE6B100E4683E</string>
 				<string>97E4DC921CDFDFB000E4683E</string>
 				<string>97E4DC901CDFDF9200E4683E</string>
 				<string>97E4DC911CDFDF9E00E4683E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TableViewDelegates</string>
 			<key>path</key>
 			<string>TableViewDelegates</string>
 			<key>sourceTree</key>
@@ -3095,8 +3104,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Cell</string>
 			<key>path</key>
 			<string>Cell</string>
 			<key>sourceTree</key>
@@ -3191,6 +3198,163 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>97E4DC961CDFE08F00E4683E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97E4DC981CDFE6B100E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSNewsListTableViewDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC991CDFE6B100E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSNewsListTableViewDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC9A1CDFE6B100E4683E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97E4DC991CDFE6B100E4683E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97E4DC9B1CDFE6BB00E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSNewsListTableViewDataSource.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC9C1CDFE6BB00E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSNewsListTableViewDataSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC9D1CDFE6BB00E4683E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97E4DC9C1CDFE6BB00E4683E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97E4DC9E1CDFE6E000E4683E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97E4DCA21CDFE70800E4683E</string>
+				<string>97E4DCA01CDFE6FB00E4683E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Delegates</string>
+			<key>path</key>
+			<string>Delegates</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DC9F1CDFE6E600E4683E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97E4DCA41CDFE72B00E4683E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Cell</string>
+			<key>path</key>
+			<string>Cell</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DCA01CDFE6FB00E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSNewsListTableViewDelegateTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DCA11CDFE6FB00E4683E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97E4DCA01CDFE6FB00E4683E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97E4DCA21CDFE70800E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSNewsListTableViewDataSourceTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DCA31CDFE70800E4683E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97E4DCA21CDFE70800E4683E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97E4DCA41CDFE72B00E4683E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSNewsListTableViewCellTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97E4DCA51CDFE72B00E4683E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97E4DCA41CDFE72B00E4683E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>

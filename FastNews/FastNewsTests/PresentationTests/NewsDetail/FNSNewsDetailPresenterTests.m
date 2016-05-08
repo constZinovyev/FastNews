@@ -57,7 +57,6 @@
     NSString *obtainNewsId = nil;
 //    when
     [self.presenter configureCurrentModuleWithNewsObjectId:newsId];
-    
 //    then
     if ([self.presenter respondsToSelector:@selector(newsId)]) {
         obtainNewsId = [self.presenter performSelector:@selector(newsId)];
