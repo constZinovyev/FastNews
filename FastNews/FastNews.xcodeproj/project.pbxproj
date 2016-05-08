@@ -221,33 +221,13 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
-				<string>97273CA31CDCEC2800B0A5E4</string>
-				<string>97D00F701CDE20E900B5372A</string>
+				<string>97D00F9D1CDE319600B5372A</string>
+				<string>97D00F9A1CDE315800B5372A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CoreData</string>
 			<key>path</key>
 			<string>CoreData</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97273CA31CDCEC2800B0A5E4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>97D00F721CDE213600B5372A</string>
-				<string>97D00F731CDE213600B5372A</string>
-				<string>97D00F741CDE213600B5372A</string>
-				<string>97D00F751CDE213600B5372A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ManagedObjects</string>
-			<key>path</key>
-			<string>ManagedObjects</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -260,8 +240,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
 			<key>path</key>
 			<string>Classes</string>
 			<key>sourceTree</key>
@@ -271,13 +249,12 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>97D00F781CDE21AD00B5372A</string>
 				<string>97273CC81CDE087900B0A5E4</string>
 				<string>97273CCC1CDE087900B0A5E4</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CoreLayer</string>
 			<key>path</key>
 			<string>CoreLayer</string>
 			<key>sourceTree</key>
@@ -409,6 +386,7 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>97D00F8C1CDE257800B5372A</string>
 				<string>97273CD31CDE088B00B0A5E4</string>
 				<string>97273CD51CDE088B00B0A5E4</string>
 			</array>
@@ -493,8 +471,6 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FNSNewsObject.h</string>
 			<key>path</key>
 			<string>FNSNewsObject.h</string>
 			<key>sourceTree</key>
@@ -508,8 +484,6 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FNSNewsObject.m</string>
 			<key>path</key>
 			<string>FNSNewsObject.m</string>
 			<key>sourceTree</key>
@@ -621,15 +595,18 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>97D00F711CDE20E900B5372A</string>
 				<string>97273CE31CDE08DA00B0A5E4</string>
 				<string>97273CD11CDE087900B0A5E4</string>
-				<string>97D00F771CDE213600B5372A</string>
+				<string>97D00FA21CDE31BF00B5372A</string>
+				<string>97D00F7F1CDE229000B5372A</string>
 				<string>9743C9F91CDC96CF00FA8D9A</string>
+				<string>97D00F821CDE22A600B5372A</string>
+				<string>97D00FA31CDE31BF00B5372A</string>
+				<string>97D00F851CDE22B900B5372A</string>
 				<string>9743C9F61CDC96CF00FA8D9A</string>
 				<string>9743C9F31CDC96CF00FA8D9A</string>
 				<string>97273CD01CDE087900B0A5E4</string>
-				<string>97D00F761CDE213600B5372A</string>
+				<string>97D00F9C1CDE315800B5372A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -937,7 +914,10 @@ fi
 			<key>files</key>
 			<array>
 				<string>9743CA0C1CDC96D000FA8D9A</string>
+				<string>97D00F941CDE25C700B5372A</string>
+				<string>97D00F901CDE25A600B5372A</string>
 				<string>97273CD71CDE088B00B0A5E4</string>
+				<string>97D00FA71CDE3A0300B5372A</string>
 				<string>97273CD81CDE088B00B0A5E4</string>
 			</array>
 			<key>isa</key>
@@ -1549,27 +1529,303 @@ fi
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>97D00F701CDE20E900B5372A</key>
+		<key>97D00F781CDE21AD00B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00FA41CDE398E00B5372A</string>
+				<string>97D00F861CDE22E000B5372A</string>
+				<string>97D00F891CDE230500B5372A</string>
+				<string>97D00F791CDE21CF00B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FNSMapper</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F791CDE21CF00B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSMapper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F7D1CDE229000B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FNSMapperBNItemsToManagedObject.h</string>
+			<key>path</key>
+			<string>FNSMapperBNItemsToManagedObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F7E1CDE229000B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FNSMapperBNItemsToManagedObject.m</string>
+			<key>path</key>
+			<string>FNSMapperBNItemsToManagedObject.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F7F1CDE229000B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F7E1CDE229000B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00F801CDE22A600B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FNSMapperManagedObjectToNewsObject.h</string>
+			<key>path</key>
+			<string>FNSMapperManagedObjectToNewsObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F811CDE22A600B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FNSMapperManagedObjectToNewsObject.m</string>
+			<key>path</key>
+			<string>FNSMapperManagedObjectToNewsObject.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F821CDE22A600B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F811CDE22A600B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00F831CDE22B900B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FNSMapperArrayObjects.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F841CDE22B900B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSMapperArrayObjects.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F851CDE22B900B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F841CDE22B900B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00F861CDE22E000B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F7D1CDE229000B5372A</string>
+				<string>97D00F7E1CDE229000B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MapperBNItemsToManagedObject</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F891CDE230500B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F801CDE22A600B5372A</string>
+				<string>97D00F811CDE22A600B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MapperManagedObjectToNewsObject</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F8C1CDE257800B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00FA51CDE39BF00B5372A</string>
+				<string>97D00F8D1CDE257F00B5372A</string>
+				<string>97D00F8E1CDE258100B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MapperTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F8D1CDE257F00B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F931CDE25C700B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MapperBNItemsToManagedObject</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F8E1CDE258100B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F8F1CDE25A600B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MapperManagedObjectToNewsObject</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F8F1CDE25A600B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSMapperManagedObjectToNewsObjectTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F901CDE25A600B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F8F1CDE25A600B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00F931CDE25C700B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSMapperBNItemsToManagedObjectTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F941CDE25C700B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00F931CDE25C700B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00F9A1CDE315800B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F9B1CDE315800B5372A</string>
+			</array>
+			<key>currentVersion</key>
+			<string>97D00F9B1CDE315800B5372A</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>FNSModel.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>97D00F9B1CDE315800B5372A</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.xcdatamodel</string>
-			<key>name</key>
-			<string>FastNewsModel.xcdatamodel</string>
 			<key>path</key>
-			<string>FastNewsModel.xcdatamodel</string>
+			<string>FNSModel.xcdatamodel</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>97D00F711CDE20E900B5372A</key>
+		<key>97D00F9C1CDE315800B5372A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>97D00F701CDE20E900B5372A</string>
+			<string>97D00F9A1CDE315800B5372A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>97D00F721CDE213600B5372A</key>
+		<key>97D00F9D1CDE319600B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F9E1CDE31BF00B5372A</string>
+				<string>97D00F9F1CDE31BF00B5372A</string>
+				<string>97D00FA01CDE31BF00B5372A</string>
+				<string>97D00FA11CDE31BF00B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ManagedObjects</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00F9E1CDE31BF00B5372A</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -1577,14 +1833,12 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FNSNewsManagedObject+CoreDataProperties.h</string>
 			<key>path</key>
-			<string>FNSNewsManagedObject+CoreDataProperties.h</string>
+			<string>FNSNewsItemManagedObject+CoreDataProperties.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>97D00F731CDE213600B5372A</key>
+		<key>97D00F9F1CDE31BF00B5372A</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -1592,14 +1846,12 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FNSNewsManagedObject+CoreDataProperties.m</string>
 			<key>path</key>
-			<string>FNSNewsManagedObject+CoreDataProperties.m</string>
+			<string>FNSNewsItemManagedObject+CoreDataProperties.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>97D00F741CDE213600B5372A</key>
+		<key>97D00FA01CDE31BF00B5372A</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -1607,14 +1859,12 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>FNSNewsManagedObject.h</string>
 			<key>path</key>
-			<string>FNSNewsManagedObject.h</string>
+			<string>FNSNewsItemManagedObject.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>97D00F751CDE213600B5372A</key>
+		<key>97D00FA11CDE31BF00B5372A</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -1622,24 +1872,69 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>FNSNewsManagedObject.m</string>
 			<key>path</key>
-			<string>FNSNewsManagedObject.m</string>
+			<string>FNSNewsItemManagedObject.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>97D00F761CDE213600B5372A</key>
+		<key>97D00FA21CDE31BF00B5372A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>97D00F731CDE213600B5372A</string>
+			<string>97D00F9F1CDE31BF00B5372A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>97D00F771CDE213600B5372A</key>
+		<key>97D00FA31CDE31BF00B5372A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>97D00F751CDE213600B5372A</string>
+			<string>97D00FA11CDE31BF00B5372A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>97D00FA41CDE398E00B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00F831CDE22B900B5372A</string>
+				<string>97D00F841CDE22B900B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MapperArray</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00FA51CDE39BF00B5372A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>97D00FA61CDE3A0300B5372A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MapperArray</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00FA61CDE3A0300B5372A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FNSMapperArrayTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97D00FA71CDE3A0300B5372A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>97D00FA61CDE3A0300B5372A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>

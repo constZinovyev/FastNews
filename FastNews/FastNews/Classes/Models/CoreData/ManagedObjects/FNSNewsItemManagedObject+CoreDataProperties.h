@@ -1,5 +1,5 @@
 //
-//  FNSNewsManagedObject+CoreDataProperties.h
+//  FNSNewsItemManagedObject+CoreDataProperties.h
 //  FastNews
 //
 //  Created by Сonstantin Zinovyev on 07.05.16.
@@ -9,18 +9,18 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "FNSNewsManagedObject.h"
+#import "FNSNewsItemManagedObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FNSNewsManagedObject (CoreDataProperties)
+@interface FNSNewsItemManagedObject (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSString *title;
-@property (nullable, nonatomic, retain) NSString *link;
-@property (nullable, nonatomic, retain) NSString *imageURL;
-@property (nullable, nonatomic, retain) NSString *content;
 @property (nullable, nonatomic, retain) NSString *author;
+@property (nullable, nonatomic, retain) NSString *content;
 @property (nullable, nonatomic, retain) NSDate *date;
+@property (nullable, nonatomic, retain) NSString *imageURL;
+@property (nullable, nonatomic, retain) NSString *link;
+@property (nullable, nonatomic, retain) NSString *title;
 
 @end
 

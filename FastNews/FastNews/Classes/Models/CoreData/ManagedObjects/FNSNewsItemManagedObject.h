@@ -1,5 +1,5 @@
 //
-//  FNSNewsManagedObject.h
+//  FNSNewsItemManagedObject.h
 //  FastNews
 //
 //  Created by Сonstantin Zinovyev on 07.05.16.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FNSNewsManagedObject : NSManagedObject
+@interface FNSNewsItemManagedObject : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
 
@@ -19,4 +19,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "FNSNewsManagedObject+CoreDataProperties.h"
+#import "FNSNewsItemManagedObject+CoreDataProperties.h"
