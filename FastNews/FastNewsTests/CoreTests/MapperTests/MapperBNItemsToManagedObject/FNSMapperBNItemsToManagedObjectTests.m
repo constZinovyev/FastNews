@@ -81,24 +81,15 @@ static CGFloat const kTestExpectationTimeout = 2.0f;
     
 }
 
-- (void)testSaveNewsInCoreData{
+- (void)testCreateNewsInCoreData{
     //given
-    XCTestExpectation *expectation = [self expectationWithDescription:@"Block not call"];
-    
     BNRSSFeedItem *feedItem = [[BNRSSFeedItem alloc] init];
     
     //    when
     [self.mapper mappingFromObject:feedItem];
-    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
-        [expectation fulfill];
-    }];
 
     //then
-    [self waitForExpectationsWithTimeout:kTestExpectationTimeout handler:^(NSError * _Nullable error) {
-        NSArray *newsItem = [FNSNewsItemManagedObject MR_findAll];
-        BOOL isObjectInCoreData = [newsItem count] == 1;
-        XCTAssertTrue(isObjectInCoreData);
-    }];
+    OCMVerify([FNSNewsItemManagedObject MR_createEntity]);
     
 }
 @end
