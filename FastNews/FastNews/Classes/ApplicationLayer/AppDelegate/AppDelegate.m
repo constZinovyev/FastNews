@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "RamblerInitialAssemblyCollector.h"
+
+static NSString * const kRSSCoreDataStoreName = @"RSSReader";
 
 @interface AppDelegate ()
 
@@ -14,9 +18,14 @@
 
 @implementation AppDelegate
 
+- (NSArray *)initialAssemblies {
+    RamblerInitialAssemblyCollector *collector = [RamblerInitialAssemblyCollector new];
+    return [collector collectInitialAssemblyClasses];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [MagicalRecord setupCoreDataStackWithStoreNamed:kRSSCoreDataStoreName];
+    
     return YES;
 }
 
