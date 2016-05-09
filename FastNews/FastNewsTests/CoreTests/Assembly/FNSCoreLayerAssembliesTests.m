@@ -94,6 +94,19 @@
     [self verifyTargetDependency:result withClass:targetClass dependencies:dependencies];
 }
 
+- (void)testThatAssemblyCreatesMapperArrayNewsManagedObjects {
+    // given
+    Class targetClass = [FNSMapperArrayObjects class];
+    NSArray *dependencies = @[
+                              RamblerSelector(mapperSingleObject)
+                              ];
+    // when
+    id result = [self.assembly mapperArrayNewsManagedObjects];
+    
+    // then
+    [self verifyTargetDependency:result withClass:targetClass dependencies:dependencies];
+}
+
 - (void)testThatAssemblyCreatesMapperFromManagedObjectToNewsObject {
     // given
     Class targetClass = [FNSMapperManagedObjectToNewsObject class];

@@ -18,7 +18,7 @@
     FNSNewsItemManagedObject *filledObject = [FNSNewsItemManagedObject MR_createEntity];
     
     filledObject.title = object.title;
-//    filledObject.content = object.description;
+    filledObject.content = object.description;
     filledObject.link = [object.link absoluteString];
     filledObject.author = object.author ? object.author : object.link.host;
     filledObject.date = object.pubDate;

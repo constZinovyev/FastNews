@@ -84,6 +84,16 @@
     }];
 }
 
+- (id<FNSMapper>)mapperArrayNewsManagedObjects {
+    return [TyphoonDefinition withClass:[FNSMapperArrayObjects class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithSigleObjectMapper:) parameters:^(TyphoonMethod *initializer) {
+            
+            [initializer injectParameterWith:[self mapperFromManagedObjectToNewsObject]];
+            
+        }];
+    }];
+}
+
 - (id<FNSMapper>)mapperFromManagedObjectToNewsObject{
     return [TyphoonDefinition withClass:[FNSMapperManagedObjectToNewsObject class]];
 }
