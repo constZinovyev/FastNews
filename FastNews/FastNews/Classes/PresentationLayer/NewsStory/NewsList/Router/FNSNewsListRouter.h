@@ -13,6 +13,7 @@
 @interface FNSNewsListRouter : NSObject <FNSNewsListRouterInput>
 
 @property (weak, nonatomic) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
+
 - (instancetype)initWithTransitionHandler:(id<RamblerViperModuleTransitionHandlerProtocol>)transitionHandler;
 
 @end
