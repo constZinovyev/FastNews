@@ -24,8 +24,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="g4t-6W-rvj"/>
                                 <exclude reference="89H-fv-FFF"/>
+                                <exclude reference="g4t-6W-rvj"/>
                             </mask>
                         </variation>
                     </imageView>
@@ -73,9 +73,9 @@
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
+                        <exclude reference="NNy-9A-7zH"/>
                         <exclude reference="Tl0-Rg-Qjp"/>
                         <exclude reference="ceB-Yr-eMH"/>
-                        <exclude reference="NNy-9A-7zH"/>
                         <exclude reference="HUR-3a-ueJ"/>
                     </mask>
                 </variation>

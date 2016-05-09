@@ -11,7 +11,7 @@
 
 @implementation FNSNewsListRouter
 
-static NSString *const kDetailRSSNewsSegue = @"DetailRSSNewsSegue";
+static NSString *const kDetailRSSNewsSegue = @"NewsDetailSegue";
 
 - (instancetype)initWithTransitionHandler:(id<RamblerViperModuleTransitionHandlerProtocol>)transitionHandler {
     self = [super init];

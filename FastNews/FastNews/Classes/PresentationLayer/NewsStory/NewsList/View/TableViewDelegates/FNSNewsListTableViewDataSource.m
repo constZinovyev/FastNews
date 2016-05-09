@@ -9,7 +9,7 @@
 #import "FNSNewsListTableViewDataSource.h"
 #import "FNSNewsListTableViewCell.h"
 
-static NSString *const cellIdentifier = @"FNSNewsFeedTableViewCell";
+static NSString *const cellIdentifier = @"FNSNewsListTableViewCell";
 
 @implementation FNSNewsListTableViewDataSource
 

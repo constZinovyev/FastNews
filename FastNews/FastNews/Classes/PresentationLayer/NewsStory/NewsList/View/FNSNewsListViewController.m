@@ -8,8 +8,6 @@
 
 #import "FNSNewsListViewController.h"
 
-static NSString *const kDetailRSSNewsSegue = @"NewsDetailSegue";
-
 @implementation FNSNewsListViewController
 
 - (void)viewDidLoad{
