@@ -23,4 +23,6 @@
 
 - (id<FNSMapper>)mapperArrayBNFeedItems;
 
+- (id<FNSMapper>)mapperArrayNewsManagedObjects;
+
 @end
