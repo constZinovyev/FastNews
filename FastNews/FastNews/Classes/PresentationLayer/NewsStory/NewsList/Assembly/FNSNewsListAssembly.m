@@ -7,6 +7,7 @@
 //
 
 #import "FNSNewsListAssembly.h"
+
 #import "FNSNewsListTableViewDelegate.h"
 #import "FNSNewsListTableViewDataSource.h"
 

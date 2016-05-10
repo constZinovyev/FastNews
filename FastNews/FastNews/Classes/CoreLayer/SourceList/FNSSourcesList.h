@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 /**
  This protocol describes object that contained sources RSS feed
  */

@@ -3641,8 +3641,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AppDelegates</string>
 			<key>path</key>
 			<string>AppDelegates</string>
 			<key>sourceTree</key>
@@ -3671,8 +3669,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AppDelegate</string>
 			<key>path</key>
 			<string>AppDelegate</string>
 			<key>sourceTree</key>
@@ -3687,8 +3683,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CoreDataAppDelegate</string>
 			<key>path</key>
 			<string>CoreDataAppDelegate</string>
 			<key>sourceTree</key>

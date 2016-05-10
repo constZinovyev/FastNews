@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "FNSNewsObject.h"
 
 @interface FNSNewsListTableViewCell : UITableViewCell

@@ -8,7 +8,6 @@
 
 @protocol FNSDateFormatter <NSObject>
 
-
 /**
  Method is used to obtain string from date with format "HH:mm dd/MM"
  

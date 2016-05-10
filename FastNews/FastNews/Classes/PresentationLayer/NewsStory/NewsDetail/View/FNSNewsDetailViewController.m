@@ -7,9 +7,9 @@
 //
 
 #import "FNSNewsDetailViewController.h"
+
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "FNSNewsObject.h"
-#import "FNSDateFormatter.h"
 
 @interface FNSNewsDetailViewController ()
 

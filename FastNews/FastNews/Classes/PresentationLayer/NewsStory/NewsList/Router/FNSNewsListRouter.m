@@ -7,6 +7,7 @@
 //
 
 #import "FNSNewsListRouter.h"
+
 #import "FNSNewsDetailPresenterInput.h"
 
 @implementation FNSNewsListRouter

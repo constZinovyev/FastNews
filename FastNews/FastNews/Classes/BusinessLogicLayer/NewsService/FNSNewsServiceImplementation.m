@@ -7,8 +7,10 @@
 //
 
 #import "FNSNewsServiceImplementation.h"
+
 #import <MagicalRecord/MagicalRecord.h>
 #import <CoreData/CoreData.h>
+
 #import "FNSNewsItemManagedObject.h"
 
 @interface FNSNewsServiceImplementation ()

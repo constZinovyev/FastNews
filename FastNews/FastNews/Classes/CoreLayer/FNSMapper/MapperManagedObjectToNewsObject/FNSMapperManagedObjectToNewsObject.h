@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "FNSMapper.h"
-#import "FNSNewsItemManagedObject.h"
-#import "FNSNewsObject.h"
 
 /**
  *    Concrete mapper from FNSNewsItemManagedObject to FNSNewsObject

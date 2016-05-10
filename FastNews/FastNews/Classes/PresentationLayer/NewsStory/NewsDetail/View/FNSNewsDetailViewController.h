@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "FNSNewsDetailViewInput.h"
 #import "FNSNewsDetailViewOutput.h"
 #import "FNSDateFormatter.h"

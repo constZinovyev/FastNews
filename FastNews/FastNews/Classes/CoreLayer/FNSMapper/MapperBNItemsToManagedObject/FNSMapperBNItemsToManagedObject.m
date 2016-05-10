@@ -7,7 +7,9 @@
 //
 
 #import "FNSMapperBNItemsToManagedObject.h"
+
 #import <MagicalRecord/MagicalRecord.h>
+
 #import "BNRSSFeedItem.h"
 #import "BNRSSFeedItemEnclosure.h"
 #import "FNSNewsItemManagedObject.h"

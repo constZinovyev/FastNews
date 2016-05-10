@@ -7,6 +7,7 @@
 //
 
 #import "FNSNewsListTableViewDataSource.h"
+
 #import "FNSNewsListTableViewCell.h"
 
 static NSString *const cellIdentifier = @"FNSNewsListTableViewCell";

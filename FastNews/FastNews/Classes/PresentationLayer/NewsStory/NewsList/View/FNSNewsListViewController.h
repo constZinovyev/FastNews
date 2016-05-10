@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "FNSNewsListViewInput.h"
 #import "FNSNewsListViewOutput.h"
+#import "FNSNewsTableViewOutput.h"
+
 #import "FNSTableViewDataSource.h"
 #import "FNSTableViewDelegate.h"
-#import "FNSNewsTableViewOutput.h"
 
 @interface FNSNewsListViewController : UITableViewController <FNSNewsListViewInput, FNSNewsTableViewOutput>
 
