@@ -64,6 +64,7 @@
 		97E4DCBE1CE0B8E500E4683E /* FNSNewsListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E4DCBD1CE0B8E500E4683E /* FNSNewsListAssembly.m */; };
 		97E4DCC01CE0B90500E4683E /* FNSNewsDetailAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E4DCBF1CE0B90500E4683E /* FNSNewsDetailAssemblyTests.m */; };
 		97E4DCC21CE0B91300E4683E /* FNSNewsListAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E4DCC11CE0B91300E4683E /* FNSNewsListAssemblyTests.m */; };
+		97FA59851CE0FF4500119D2F /* CoreDataAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FA59841CE0FF4500119D2F /* CoreDataAppDelegate.m */; };
 		9B8FC3AEFF98CA189FDAF274 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500E0A3AC9D70A15E797E76F /* libPods.a */; };
 		E0ECE39505369FC4A971DE18 /* libPods-FastNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 806EF3C1FFBD7BD2EA1C5E95 /* libPods-FastNewsTests.a */; };
 /* End PBXBuildFile section */
@@ -199,6 +200,8 @@
 		97E4DCBD1CE0B8E500E4683E /* FNSNewsListAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSNewsListAssembly.m; sourceTree = "<group>"; };
 		97E4DCBF1CE0B90500E4683E /* FNSNewsDetailAssemblyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSNewsDetailAssemblyTests.m; sourceTree = "<group>"; };
 		97E4DCC11CE0B91300E4683E /* FNSNewsListAssemblyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNSNewsListAssemblyTests.m; sourceTree = "<group>"; };
+		97FA59831CE0FF4500119D2F /* CoreDataAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataAppDelegate.h; sourceTree = "<group>"; };
+		97FA59841CE0FF4500119D2F /* CoreDataAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataAppDelegate.m; sourceTree = "<group>"; };
 		B918241879C925FFA4EB0B85 /* Pods-FastNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBBA40615985A119C993A790 /* Pods-FastNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastNewsTests/Pods-FastNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0E36A0F3DF31FEC0600D2C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -537,7 +540,7 @@
 		97D00FB21CDF1A7200B5372A /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				97E4DCC31CE0DBB600E4683E /* AppDelegate */,
+				97E4DCC31CE0DBB600E4683E /* AppDelegates */,
 				97E4DCA61CE092F100E4683E /* ApplicationConfigurator */,
 			);
 			path = ApplicationLayer;
@@ -847,12 +850,13 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		97E4DCC31CE0DBB600E4683E /* AppDelegate */ = {
+		97E4DCC31CE0DBB600E4683E /* AppDelegates */ = {
 			isa = PBXGroup;
 			children = (
-				9743C9F41CDC96CF00FA8D9A /* AppDelegate.h */,
-				9743C9F51CDC96CF00FA8D9A /* AppDelegate.m */,
+				97FA59821CE0FE7600119D2F /* CoreDataAppDelegate */,
+				97FA59811CE0FE6900119D2F /* AppDelegate */,
 			);
+			name = AppDelegates;
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
@@ -863,6 +867,24 @@
 				9743C9FF1CDC96CF00FA8D9A /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		97FA59811CE0FE6900119D2F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9743C9F41CDC96CF00FA8D9A /* AppDelegate.h */,
+				9743C9F51CDC96CF00FA8D9A /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		97FA59821CE0FE7600119D2F /* CoreDataAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				97FA59831CE0FF4500119D2F /* CoreDataAppDelegate.h */,
+				97FA59841CE0FF4500119D2F /* CoreDataAppDelegate.m */,
+			);
+			name = CoreDataAppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1098,6 +1120,7 @@
 				97E4DCBB1CE0B8D700E4683E /* FNSNewsDetailAssembly.m in Sources */,
 				97273CE31CDE08DA00B0A5E4 /* FNSNewsObject.m in Sources */,
 				97273CD11CDE087900B0A5E4 /* FNSRSSRecieverImplementation.m in Sources */,
+				97FA59851CE0FF4500119D2F /* CoreDataAppDelegate.m in Sources */,
 				97D00FA21CDE31BF00B5372A /* FNSNewsItemManagedObject+CoreDataProperties.m in Sources */,
 				97D00F7F1CDE229000B5372A /* FNSMapperBNItemsToManagedObject.m in Sources */,
 				97D00FAD1CDF0C3A00B5372A /* FNSNewsServiceImplementation.m in Sources */,

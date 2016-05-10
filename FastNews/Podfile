@@ -9,6 +9,7 @@ pod 'BNRSSFeedParser'
 pod 'Reachability'
 pod 'SDWebImage', '~> 3.7'
 pod 'RamblerTyphoonUtils/AssemblyCollector'
+pod 'RamblerAppDelegateProxy'
 
 target 'FastNewsTests', :exclusive => true do
     pod 'OCMock', '~> 3.1'
