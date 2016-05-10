@@ -1,0 +1,17 @@
+source 'https://github.com/cocoapods/Specs.git'
+
+platform:ios, '7.0'
+
+pod 'MagicalRecord', '~> 2.3'
+pod 'ViperMcFlurry'
+pod 'Typhoon', '~> 3.3'
+pod 'BNRSSFeedParser'
+pod 'Reachability'
+pod 'SDWebImage', '~> 3.7'
+pod 'RamblerTyphoonUtils/AssemblyCollector'
+pod 'RamblerAppDelegateProxy'
+
+target 'FastNewsTests', :exclusive => true do
+    pod 'OCMock', '~> 3.1'
+    pod 'RamblerTyphoonUtils/AssemblyTesting'
+end

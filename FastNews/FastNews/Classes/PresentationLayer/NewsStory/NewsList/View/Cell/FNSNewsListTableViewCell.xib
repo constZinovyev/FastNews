@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="SYm-6B-0Ip" customClass="FNSNewsListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SYm-6B-0Ip" id="ItF-io-1Eh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="paL-QA-0hQ">
+                        <rect key="frame" x="8" y="8" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="89H-fv-FFF"/>
+                            <constraint firstAttribute="width" constant="84" id="OKF-Lu-oFM"/>
+                            <constraint firstAttribute="width" secondItem="paL-QA-0hQ" secondAttribute="height" multiplier="1:1" id="g4t-6W-rvj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="89H-fv-FFF"/>
+                                <exclude reference="g4t-6W-rvj"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sm-uJ-RZT">
+                        <rect key="frame" x="219" y="16" width="87" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" verticalCompressionResistancePriority="749" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ai-iF-jXU">
+                        <rect key="frame" x="104" y="31.5" width="208" height="68"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="trz-Kf-bYU"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORm-bB-ffW">
+                        <rect key="frame" x="108" y="16" width="103" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="paL-QA-0hQ" firstAttribute="leading" secondItem="ItF-io-1Eh" secondAttribute="leading" constant="8" id="25f-rb-zvB"/>
+                    <constraint firstItem="7ai-iF-jXU" firstAttribute="top" secondItem="4Sm-uJ-RZT" secondAttribute="bottom" id="4e6-lI-ZRf"/>
+                    <constraint firstAttribute="bottom" secondItem="7ai-iF-jXU" secondAttribute="bottom" id="Dxm-B0-bqT"/>
+                    <constraint firstItem="ORm-bB-ffW" firstAttribute="leading" secondItem="ItF-io-1Eh" secondAttribute="leading" constant="96" id="HUR-3a-ueJ"/>
+                    <constraint firstItem="ORm-bB-ffW" firstAttribute="top" secondItem="ItF-io-1Eh" secondAttribute="top" constant="16" id="MBc-IZ-mhs"/>
+                    <constraint firstItem="7ai-iF-jXU" firstAttribute="leading" secondItem="ItF-io-1Eh" secondAttribute="leading" constant="80" id="NNy-9A-7zH"/>
+                    <constraint firstItem="paL-QA-0hQ" firstAttribute="leading" secondItem="ItF-io-1Eh" secondAttribute="leading" constant="8" id="Nfb-0u-7gu"/>
+                    <constraint firstItem="paL-QA-0hQ" firstAttribute="top" secondItem="ItF-io-1Eh" secondAttribute="top" constant="8" id="RCh-my-Xzc"/>
+                    <constraint firstAttribute="trailing" secondItem="4Sm-uJ-RZT" secondAttribute="trailing" constant="14" id="SFM-AH-qCZ"/>
+                    <constraint firstItem="paL-QA-0hQ" firstAttribute="top" secondItem="ItF-io-1Eh" secondAttribute="top" constant="8" id="TAI-RS-cN7"/>
+                    <constraint firstAttribute="bottom" secondItem="7ai-iF-jXU" secondAttribute="bottom" constant="-40" id="Tl0-Rg-Qjp"/>
+                    <constraint firstItem="4Sm-uJ-RZT" firstAttribute="leading" secondItem="paL-QA-0hQ" secondAttribute="trailing" constant="127" id="Ums-Hx-68X"/>
+                    <constraint firstItem="7ai-iF-jXU" firstAttribute="top" secondItem="ORm-bB-ffW" secondAttribute="bottom" id="WAc-tQ-OyK"/>
+                    <constraint firstItem="4Sm-uJ-RZT" firstAttribute="leading" secondItem="ORm-bB-ffW" secondAttribute="trailing" constant="8" id="ZCD-fd-9Sg"/>
+                    <constraint firstAttribute="trailing" secondItem="7ai-iF-jXU" secondAttribute="trailing" constant="8" id="Zb2-8D-nDL"/>
+                    <constraint firstItem="ORm-bB-ffW" firstAttribute="leading" secondItem="paL-QA-0hQ" secondAttribute="trailing" constant="16" id="bJP-1x-ZtG"/>
+                    <constraint firstItem="7ai-iF-jXU" firstAttribute="leading" secondItem="paL-QA-0hQ" secondAttribute="trailing" constant="12" id="bNh-cO-Ucw"/>
+                    <constraint firstAttribute="bottom" secondItem="7ai-iF-jXU" secondAttribute="bottom" id="ceB-Yr-eMH"/>
+                    <constraint firstAttribute="bottom" secondItem="paL-QA-0hQ" secondAttribute="bottom" constant="8" id="nIa-X3-UVK"/>
+                    <constraint firstItem="4Sm-uJ-RZT" firstAttribute="top" secondItem="ItF-io-1Eh" secondAttribute="top" constant="16" id="r71-GU-AeB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="NNy-9A-7zH"/>
+                        <exclude reference="Tl0-Rg-Qjp"/>
+                        <exclude reference="ceB-Yr-eMH"/>
+                        <exclude reference="HUR-3a-ueJ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsAuthor" destination="ORm-bB-ffW" id="BSg-Qh-hCk"/>
+                <outlet property="newsDate" destination="4Sm-uJ-RZT" id="bO2-ED-LeF"/>
+                <outlet property="newsImageView" destination="paL-QA-0hQ" id="i8o-GE-PN1"/>
+                <outlet property="newsTitle" destination="7ai-iF-jXU" id="4qk-sO-WLf"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="390"/>
+        </tableViewCell>
+    </objects>
+</document>
