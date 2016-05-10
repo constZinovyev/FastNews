@@ -14,11 +14,6 @@ static NSString * const kRSSCoreDataStoreName = @"RSSReader";
 
 @implementation CoreDataAppDelegate
 
-- (NSArray *)initialAssemblies {
-    RamblerInitialAssemblyCollector *collector = [RamblerInitialAssemblyCollector new];
-    return [collector collectInitialAssemblyClasses];
-}
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [MagicalRecord setupCoreDataStackWithStoreNamed:kRSSCoreDataStoreName];

@@ -24,7 +24,6 @@ static NSString * const kRSSCoreDataStoreName = @"RSSReader";
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [MagicalRecord setupCoreDataStackWithStoreNamed:kRSSCoreDataStoreName];
     
     return YES;
 }
