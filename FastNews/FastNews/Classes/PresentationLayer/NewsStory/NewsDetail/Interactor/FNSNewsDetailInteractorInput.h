@@ -8,6 +8,14 @@
 
 @protocol FNSNewsDetailInteractorInput <NSObject>
 
+/**
+ Method is used to obtain news plain object with newsId
+ 
+ @param newsId link of news object
+ 
+ @return FNSNewsObject
+ */
+
 - (id)obtainNewsWithNewsId:(NSString*)newsId;
 
 @end

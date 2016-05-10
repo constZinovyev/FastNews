@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "FNSMapper.h"
 
+/**
+ *    Concrete mapper from BNFeedItem to FNSNewsItemManagedObject
+ */
+
 @interface FNSMapperBNItemsToManagedObject : NSObject <FNSMapper>
 
 @end

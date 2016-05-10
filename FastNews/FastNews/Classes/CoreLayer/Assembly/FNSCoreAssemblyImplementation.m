@@ -24,7 +24,7 @@
 
 #pragma mark Sources list
 
-- (id <FNSSourceList>)sourcesList{
+- (id<FNSSourceList>)sourcesList{
     return [TyphoonDefinition withClass:[FNSSourcesListImplementation class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithDefaultSources) parameters:nil];
     }];
@@ -32,7 +32,7 @@
 
 #pragma mark Reachability
 
-- (id <FNSReachability>)reachabilityInternetConnection{
+- (id<FNSReachability>)reachabilityInternetConnection{
     return [TyphoonDefinition withClass:[FNSReachabilityImplementation class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithReachability:) parameters:^(TyphoonMethod *initializer) {
             

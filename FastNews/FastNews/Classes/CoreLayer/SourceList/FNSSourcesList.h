@@ -7,10 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+/**
+ This protocol describes object that contained sources RSS feed
+ */
 
 @protocol FNSSourcesList <NSObject>
+/**
+ *    Init object that contained default sources: lenta.ru and gazeta.ru
+ *
+ *    @return FNSSourcesList
+ */
 
 - (instancetype)initWithDefaultSources;
+
+/**
+ *    All sources that contained in SourcesList object
+ *
+ *    @return NSArray <NSURL>
+ */
 
 - (NSArray*)sourcesList;
 

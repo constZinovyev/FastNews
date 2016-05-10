@@ -17,8 +17,8 @@
 
 @property (strong, nonatomic) FNSNewsListViewController *viewController;
 @property (strong, nonatomic) id<FNSNewsListViewOutput> output;
-@property (nonatomic, strong) id <FNSTableViewDelegate> delegateTableView;
-@property (nonatomic, strong) id <FNSTableViewDataSource> dataSourceTableView;
+@property (nonatomic, strong) id<FNSTableViewDelegate> delegateTableView;
+@property (nonatomic, strong) id<FNSTableViewDataSource> dataSourceTableView;
 
 @end
 

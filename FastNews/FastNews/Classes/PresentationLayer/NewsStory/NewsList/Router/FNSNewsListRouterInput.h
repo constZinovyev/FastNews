@@ -10,6 +10,13 @@
 
 @protocol FNSNewsListRouterInput <NSObject>
 
+/**
+ 
+ Method is used to initiate transition to the NewsDetail
+ 
+ @param NewsId NSString link news object
+ */
+
 - (void)openNewsDetailWithNewsId:(NSString *)NewsId;
 
 @end

@@ -11,8 +11,10 @@
 #import "FNSNewsItemManagedObject.h"
 #import "FNSNewsObject.h"
 
-@interface FNSMapperManagedObjectToNewsObject : NSObject <FNSMapper>
+/**
+ *    Concrete mapper from FNSNewsItemManagedObject to FNSNewsObject
+ */
 
-- (FNSNewsObject*)mappingFromObject:(FNSNewsItemManagedObject*)object;
+@interface FNSMapperManagedObjectToNewsObject : NSObject <FNSMapper>
 
 @end

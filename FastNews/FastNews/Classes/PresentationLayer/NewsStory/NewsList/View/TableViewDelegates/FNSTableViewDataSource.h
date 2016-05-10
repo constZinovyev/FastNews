@@ -10,6 +10,11 @@
 
 @protocol FNSTableViewDataSource <NSObject, UITableViewDataSource>
 
+/**
+
+ Method is used to set NewsList DataSource with news object from data
+ */
+
 - (void)setDataForTableViewDataSource:(NSArray*)data;
 
 @end

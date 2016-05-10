@@ -8,6 +8,11 @@
 
 @protocol FNSNewsTableViewOutput <NSObject>
 
+/**
+
+ Method is used to inform view that cell was selected
+ */
+
 - (void)didSelectCellWithNews:(id)news;
 
 @end

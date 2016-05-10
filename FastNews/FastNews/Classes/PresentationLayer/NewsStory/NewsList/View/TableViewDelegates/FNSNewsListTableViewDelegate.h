@@ -12,7 +12,7 @@
 
 @interface FNSNewsListTableViewDelegate : NSObject <FNSTableViewDelegate>
 
-@property (nonatomic, weak) id <FNSNewsTableViewOutput> delegate;
+@property (nonatomic, weak) id<FNSNewsTableViewOutput> delegate;
 @property (strong, nonatomic) NSArray *feed;
 
 @end

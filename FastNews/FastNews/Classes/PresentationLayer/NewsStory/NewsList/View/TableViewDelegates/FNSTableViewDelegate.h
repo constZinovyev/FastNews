@@ -10,7 +10,18 @@
 
 @protocol FNSTableViewDelegate <NSObject, UITableViewDelegate>
 
+/**
+ 
+ Method is used to set NewsList Delegate with news object from data
+ */
+
 - (void)setDataForTableViewDelegate:(NSArray*)data;
+
+/**
+ 
+ Method is used to set communication between view controller and table view delegate
+ */
+
 - (void)setDelegate:(id)delegate;
 
 @end
