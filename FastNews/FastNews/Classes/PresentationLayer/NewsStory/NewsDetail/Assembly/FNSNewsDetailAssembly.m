@@ -15,6 +15,7 @@
     return [TyphoonDefinition withClass:[FNSNewsDetailViewController class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output) with:[self presenterDetail]];
+                              [definition injectProperty:@selector(dateFormatter) with:[self.coreLayer dateFormatter]];
                           }];
 }
 

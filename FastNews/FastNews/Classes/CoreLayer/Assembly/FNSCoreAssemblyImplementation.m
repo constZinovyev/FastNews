@@ -20,6 +20,8 @@
 #import "FNSMapperManagedObjectToNewsObject.h"
 #import "FNSMapperArrayObjects.h"
 
+#import "FNSDateFormatterImplementation.h"
+
 @implementation FNSCoreAssemblyImplementation
 
 #pragma mark Sources list
@@ -102,4 +104,8 @@
     return [TyphoonDefinition withClass:[FNSMapperBNItemsToManagedObject class]];
 }
 
+#pragma mark Sources list
+- (id<FNSDateFormatter>)dateFormatter{
+    return [TyphoonDefinition withClass:[FNSDateFormatterImplementation class]];
+}
 @end

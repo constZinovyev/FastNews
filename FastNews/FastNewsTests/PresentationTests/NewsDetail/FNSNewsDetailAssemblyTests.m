@@ -35,7 +35,8 @@
     // given
     Class targetClass = [FNSNewsDetailViewController class];
     NSArray *dependencies = @[
-                              RamblerSelector(output)
+                              RamblerSelector(output),
+                              RamblerSelector(dateFormatter)
                               ];
     // when
     id result = [self.assembly viewControllerDetail];

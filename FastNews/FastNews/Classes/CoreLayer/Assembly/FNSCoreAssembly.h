@@ -10,6 +10,7 @@
 @protocol FNSReachability;
 @protocol FNSMapper;
 @protocol FNSMultipleReciever;
+@protocol FNSDateFormatter;
 
 @protocol FNSCoreAssembly <NSObject>
 
@@ -24,5 +25,7 @@
 - (id<FNSMapper>)mapperArrayBNFeedItems;
 
 - (id<FNSMapper>)mapperArrayNewsManagedObjects;
+
+- (id<FNSDateFormatter>)dateFormatter;
 
 @end
