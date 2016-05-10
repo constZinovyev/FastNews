@@ -10,6 +10,9 @@
 #import <MagicalRecord/MagicalRecord.h>
 #import "FNSMapperManagedObjectToNewsObject.h"
 
+#import "FNSNewsItemManagedObject.h"
+#import "FNSNewsObject.h"
+
 @interface FNSMapperManagedObjectToNewsObjectTests : XCTestCase
 
 @property (strong, nonatomic) FNSMapperManagedObjectToNewsObject *mapper;
