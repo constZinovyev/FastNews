@@ -10,6 +10,12 @@
 
 @protocol FNSNewsDetailPresenterInput <RamblerViperModuleInput>
 
+/**
+ Method is used to configure NewsDetail module with news that id is equal objectId
+ 
+ @param objectId link of news object
+ */
+
 - (void)configureCurrentModuleWithNewsObjectId:(NSString *)objectId;
 
 @end

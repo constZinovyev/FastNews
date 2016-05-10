@@ -11,7 +11,7 @@
 
 @implementation FNSServicesAssemblyImplementation
 
-- (id <FNSNewsService>)newsService{
+- (id<FNSNewsService>)newsService{
     
     return [TyphoonDefinition withClass:[FNSNewsServiceImplementation class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithMultipleRSSReciever:andMapper:) parameters:^(TyphoonMethod *initializer) {

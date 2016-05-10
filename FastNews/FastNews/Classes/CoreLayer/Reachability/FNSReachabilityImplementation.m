@@ -7,7 +7,6 @@
 //
 
 #import "FNSReachabilityImplementation.h"
-#import "Reachability.h"
 
 @interface FNSReachabilityImplementation ()
 

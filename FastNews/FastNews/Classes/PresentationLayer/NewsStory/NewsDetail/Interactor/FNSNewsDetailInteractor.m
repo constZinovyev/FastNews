@@ -7,9 +7,8 @@
 //
 
 #import "FNSNewsDetailInteractor.h"
+
 #import "FNSNewsObject.h"
-#import "FNSNewsService.h"
-#import "FNSMapper.h"
 
 @interface FNSNewsDetailInteractor ()
 

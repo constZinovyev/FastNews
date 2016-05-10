@@ -7,9 +7,10 @@
 //
 
 #import "FNSNewsDetailViewController.h"
+
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "FNSNewsObject.h"
-#import "FNSDateFormatter.h"
+#import "FNSDateFormatterImplementation.h"
 
 @interface FNSNewsDetailViewController ()
 
@@ -27,10 +28,12 @@
 }
 
 - (void)fillViewWithNewsObject:(FNSNewsObject*)newsObject{
+    id<FNSDateFormatter> dateFormatter = [[FNSDateFormatterImplementation alloc] init];
     self.newsTitle.text = newsObject.title;
     self.newsAuthor.text = newsObject.author;
     self.newsContent.text = newsObject.content;
-    self.newsPubDate.text = [self.dateFormatter stringFullTimeFromDate:newsObject.date];
+    self.newsContent.text = [self.newsContent.text stringByReplacingCharactersInRange:NSMakeRange(0,0) withString:@"    "];
+    self.newsPubDate.text = [dateFormatter stringFullTimeFromDate:newsObject.date];
     UIImage *image = [UIImage imageNamed:newsObject.link.host];
     [self.newsImage sd_setImageWithURL:newsObject.imageURL
                       placeholderImage:image];

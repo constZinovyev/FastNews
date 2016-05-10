@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FNSReachability.h"
 
-@class Reachability;
+#import "FNSReachability.h"
+#import "Reachability.h"
 
 @interface FNSReachabilityImplementation : NSObject <FNSReachability>
 

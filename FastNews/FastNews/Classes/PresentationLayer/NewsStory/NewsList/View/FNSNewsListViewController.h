@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "FNSNewsListViewInput.h"
 #import "FNSNewsListViewOutput.h"
+#import "FNSNewsTableViewOutput.h"
+
 #import "FNSTableViewDataSource.h"
 #import "FNSTableViewDelegate.h"
-#import "FNSNewsTableViewOutput.h"
 
 @interface FNSNewsListViewController : UITableViewController <FNSNewsListViewInput, FNSNewsTableViewOutput>
 
 @property (nonatomic, strong) id<FNSNewsListViewOutput> output;
-@property (nonatomic, strong) id <FNSTableViewDelegate> delegateTableView;
-@property (nonatomic, strong) id <FNSTableViewDataSource> dataSourceTableView;
+@property (nonatomic, strong) id<FNSTableViewDelegate> delegateTableView;
+@property (nonatomic, strong) id<FNSTableViewDataSource> dataSourceTableView;
 
 @end

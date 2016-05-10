@@ -7,8 +7,9 @@
 //
 
 #import "FNSNewsListTableViewCell.h"
-#import "FNSDateFormatterImplementation.h"
+
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "FNSDateFormatterImplementation.h"
 
 @implementation FNSNewsListTableViewCell
 

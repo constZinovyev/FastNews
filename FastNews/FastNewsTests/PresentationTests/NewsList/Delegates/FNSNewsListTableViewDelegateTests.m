@@ -14,7 +14,7 @@
 @interface FNSNewsListTableViewDelegateTests : XCTestCase
 
 @property (strong, nonatomic) FNSNewsListTableViewDelegate *tableViewDelegate;
-@property (nonatomic, weak) id <FNSNewsTableViewOutput> delegate;
+@property (nonatomic, weak) id<FNSNewsTableViewOutput> delegate;
 
 @end
 

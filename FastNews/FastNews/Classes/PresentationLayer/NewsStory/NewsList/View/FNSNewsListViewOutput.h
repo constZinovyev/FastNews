@@ -11,7 +11,18 @@
 
 @protocol FNSNewsListViewOutput <NSObject>
 
+/**
+ 
+ Method is used to inform presenter that view needs to be configuered
+ */
+
 - (void)setupView;
+
+/**
+
+ Method is used to inform presenter that cell was selected
+ */
+
 - (void)didSelectCellWithNews:(FNSNewsObject*)news;
 
 @end

@@ -9,8 +9,6 @@
 #import "FNSNewsListPresenter.h"
 #import "FNSNewsObject.h"
 
-
-
 @interface FNSNewsListPresenter ()
 
 @property (nonatomic, weak) id<FNSNewsListViewInput> view;

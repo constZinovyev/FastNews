@@ -7,7 +7,9 @@
 //
 
 #import "FNSMapperManagedObjectToNewsObject.h"
+
 #import <MagicalRecord/MagicalRecord.h>
+
 #import "FNSNewsItemManagedObject.h"
 #import "FNSNewsObject.h"
 

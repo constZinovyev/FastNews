@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FNSNewsListRouterInput.h"
+
 #import <ViperMcFlurry/ViperMcFlurry.h>
+#import "FNSNewsListRouterInput.h"
 
 @interface FNSNewsListRouter : NSObject <FNSNewsListRouterInput>
 

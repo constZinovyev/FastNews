@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "FNSNewsDetailViewInput.h"
 #import "FNSNewsDetailViewOutput.h"
 #import "FNSDateFormatter.h"
@@ -14,7 +15,6 @@
 @interface FNSNewsDetailViewController : UIViewController <FNSNewsDetailViewInput>
 
 @property (nonatomic, strong) id<FNSNewsDetailViewOutput> output;
-@property (nonatomic, strong) id<FNSDateFormatter> dateFormatter;
 
 @property (weak, nonatomic) IBOutlet UIImageView *newsImage;
 @property (weak, nonatomic) IBOutlet UITextView *newsTitle;

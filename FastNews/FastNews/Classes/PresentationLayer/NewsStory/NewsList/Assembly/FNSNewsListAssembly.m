@@ -7,6 +7,7 @@
 //
 
 #import "FNSNewsListAssembly.h"
+
 #import "FNSNewsListTableViewDelegate.h"
 #import "FNSNewsListTableViewDataSource.h"
 
@@ -51,15 +52,15 @@
 }
 
 
-- (id <FNSTableViewDelegate>)delegateNewsListTableView {
+- (id<FNSTableViewDelegate>)delegateNewsListTableView {
     return [TyphoonDefinition withClass:[FNSNewsListTableViewDelegate class]];
 }
 
-- (id <FNSTableViewDataSource>)dataSourceNewsListTableView {
+- (id<FNSTableViewDataSource>)dataSourceNewsListTableView {
     return [TyphoonDefinition withClass:[FNSNewsListTableViewDataSource class]];
 }
 
-- (id <FNSNewsListRouterInput>)routerNewsList {
+- (id<FNSNewsListRouterInput>)routerNewsList {
     return [TyphoonDefinition withClass:[FNSNewsListRouter class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition useInitializer:@selector(initWithTransitionHandler:) parameters:^(TyphoonMethod *initializer) {

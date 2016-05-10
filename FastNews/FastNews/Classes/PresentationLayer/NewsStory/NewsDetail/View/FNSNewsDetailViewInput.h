@@ -10,6 +10,12 @@
 
 @protocol FNSNewsDetailViewInput <NSObject>
 
+/**
+ Method is used to configure view
+ 
+ @param newsObject FNSNewsObject object
+ */
+
 - (void)setupViewWithNewsObject:(FNSNewsObject*)newsObject;
 
 @end

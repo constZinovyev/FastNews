@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "FNSNewsDetailInteractorInput.h"
 #import "FNSNewsService.h"
 #import "FNSMapper.h"
