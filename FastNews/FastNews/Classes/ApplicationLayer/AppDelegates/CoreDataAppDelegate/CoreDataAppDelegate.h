@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RamblerAppDelegateProxy.h"
+#import <UIKit/UIKit.h>
 
 @interface CoreDataAppDelegate : UIResponder <UIApplicationDelegate>
 

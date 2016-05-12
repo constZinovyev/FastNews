@@ -67,7 +67,6 @@
     self.viewController.newsTitle = textViewTitle;
     self.viewController.newsPubDate = labelPubDate;
     self.viewController.newsAuthor = labelAuthor;
-    NSString *content = [newsObject.content stringByReplacingCharactersInRange:NSMakeRange(0,0) withString:@"    "];
     
     //when
     [self.viewController setupViewWithNewsObject:newsObject];
@@ -75,7 +74,7 @@
     //then
     XCTAssertEqualObjects(newsObject.title, self.viewController.newsTitle.text);
     XCTAssertEqualObjects(newsObject.author, self.viewController.newsAuthor.text);
-    XCTAssertEqualObjects(content, self.viewController.newsContent.text);
+    XCTAssertEqualObjects(newsObject.content, self.viewController.newsContent.text);
     XCTAssertEqualObjects(stringDate, self.viewController.newsPubDate.text);
 }
 
