@@ -31,7 +31,6 @@
     self.newsTitle.text = newsObject.title;
     self.newsAuthor.text = newsObject.author;
     self.newsContent.text = newsObject.content;
-    self.newsContent.text = [self.newsContent.text stringByReplacingCharactersInRange:NSMakeRange(0,0) withString:@"    "];
     self.newsPubDate.text = [self.dateFormatter stringFullTimeFromDate:newsObject.date];
     UIImage *image = [UIImage imageNamed:newsObject.link.host];
     [self.newsImage sd_setImageWithURL:newsObject.imageURL

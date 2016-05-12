@@ -7,10 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <MagicalRecord/MagicalRecord.h>
 #import "RamblerInitialAssemblyCollector.h"
-
-static NSString * const kRSSCoreDataStoreName = @"RSSReader";
 
 @interface AppDelegate ()
 
